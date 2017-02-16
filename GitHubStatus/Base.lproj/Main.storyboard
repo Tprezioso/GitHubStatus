@@ -40,6 +40,9 @@
                             <constraint firstAttribute="leadingMargin" secondItem="lZ2-0E-DxP" secondAttribute="leading" id="b2w-vx-2xO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="lZ2-0E-DxP" id="moQ-WP-NRf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
