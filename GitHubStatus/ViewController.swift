@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         navImageView.contentMode = .scaleAspectFit
         navImageView.image = navImage
         self.navigationItem.titleView = navImageView
-        self.view.backgroundColor = UIColor.white
         
         let blurEffect = UIBlurEffect(style: .light)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -34,6 +33,19 @@ class ViewController: UIViewController {
         self.view.insertSubview(backgroundImageView, at: 0)
     }
     
+    func setBackGroundColorForStatus(status:String) {
+        switch status {
+        case "good":
+            self.view.backgroundColor = UIColor.green
+        case "minor":
+            self.view.backgroundColor = UIColor.yellow
+        case "major":
+            self.view.backgroundColor = UIColor.red
+        default:
+            self.view.backgroundColor = UIColor.white
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -45,6 +57,8 @@ class ViewController: UIViewController {
                 self.statusLabel.text = "GitHub Status:\n\(statusString!)"
                 self.bodyLabel.text = dataFromJson?["body"] as! String?
                 self.lastUpdatedLabel.text = dataFromJson?["created_on"] as! String?
+               print(statusString!)
+                self.setBackGroundColorForStatus(status: statusString!)
             }
         }
     }
