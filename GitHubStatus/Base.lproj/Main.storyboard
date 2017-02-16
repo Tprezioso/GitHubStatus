@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="width" constant="343" id="36j-Jk-edk"/>
                                     <constraint firstAttribute="height" constant="158" id="aFu-Hl-h4h"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="width" constant="343" id="BIm-74-VdQ"/>
                                     <constraint firstAttribute="height" constant="104" id="wq8-RE-obU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -58,7 +58,7 @@
                                     <constraint firstAttribute="height" constant="259" id="B7V-OC-hxK"/>
                                     <constraint firstAttribute="width" constant="343" id="tTT-RZ-MaE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

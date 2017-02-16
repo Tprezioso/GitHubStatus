@@ -14,25 +14,39 @@ class ViewController: UIViewController {
     @IBOutlet var lastUpdatedLabel: UILabel!
     @IBOutlet var bodyLabel: UILabel!
 
+    func setupViews() {
+        let navImage : UIImage = UIImage(named: "Octicons-mark-github.svg.png")!
+        let navImageView = UIImageView(frame: CGRect(x:0, y: 0, width: 40, height: 40))
+        navImageView.contentMode = .scaleAspectFit
+        navImageView.image = navImage
+        self.navigationItem.titleView = navImageView
+        self.view.backgroundColor = UIColor.white
+        
+        let blurEffect = UIBlurEffect(style: .light)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.view.frame
+        self.view.insertSubview(blurEffectView, at: 0)
+        
+        let backgroundImage : UIImage = UIImage(named: "Octocat.png")!
+        let backgroundImageView = UIImageView(frame: CGRect(x:0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+        backgroundImageView.contentMode = .scaleAspectFit
+        backgroundImageView.image = backgroundImage
+        self.view.insertSubview(backgroundImageView, at: 0)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
         Alamofire.request("https://status.github.com/api/last-message.json").responseJSON { response in
             if let JSON = response.result.value {
                 print("JSON: \(JSON)")
                 let dataFromJson = JSON as? [String: Any]
-               // print("\(dataFromJson?["created_on"]!)")
                 let statusString = dataFromJson?["status"] as! String?
                 self.statusLabel.text = "GitHub Status:\n\(statusString!)"
                 self.bodyLabel.text = dataFromJson?["body"] as! String?
                 self.lastUpdatedLabel.text = dataFromJson?["created_on"] as! String?
             }
         }
-        let image : UIImage = UIImage(named: "Octicons-mark-github.svg.png")!
-        let imageView1 = UIImageView(frame: CGRect(x:0, y: 0, width: 40, height: 40))
-        imageView1.contentMode = .scaleAspectFit
-        imageView1.image = image
-        self.navigationItem.titleView = imageView1
-        self.view.backgroundColor = UIColor.green
     }
 }
 
