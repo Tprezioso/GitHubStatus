@@ -72,7 +72,6 @@ class ViewController: UIViewController {
                 let dateToChange = dataFromJson?["created_on"] as! String?
                 self.statusLabel.text = "GitHub Status\n\(statusString!)"
                 self.bodyLabel.text = dataFromJson?["body"] as! String?
-//                self.lastUpdatedLabel.text = dataFromJson?["created_on"] as! String?
                print(statusString!)
                 self.setBackGroundColorForStatus(status: statusString!)
              self.lastUpdatedLabel.text = self.getDateFromJSONData(dateString: dateToChange!)
