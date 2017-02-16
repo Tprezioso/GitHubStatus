@@ -46,6 +46,21 @@ class ViewController: UIViewController {
         }
     }
     
+    func takeStringFromBeging(stringToCut:String ,start: Int, end: Int) -> String {
+        let startIndex = stringToCut.index(stringToCut.startIndex, offsetBy: start)
+        let endIndex = stringToCut.index(stringToCut.startIndex, offsetBy: end)
+        
+        return stringToCut[startIndex...endIndex]
+    }
+    
+    func getDateFromJSONData(dateString: String) -> String {
+        let day = takeStringFromBeging(stringToCut: dateString, start: 8, end: 9)
+        let month = takeStringFromBeging(stringToCut: dateString, start: 5, end: 6)
+        let year = takeStringFromBeging(stringToCut: dateString, start: 0, end: 3)
+
+        return "Last Updated\n\(month)/\(day)/\(year)"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -54,11 +69,13 @@ class ViewController: UIViewController {
                 print("JSON: \(JSON)")
                 let dataFromJson = JSON as? [String: Any]
                 let statusString = dataFromJson?["status"] as! String?
-                self.statusLabel.text = "GitHub Status:\n\(statusString!)"
+                let dateToChange = dataFromJson?["created_on"] as! String?
+                self.statusLabel.text = "GitHub Status\n\(statusString!)"
                 self.bodyLabel.text = dataFromJson?["body"] as! String?
-                self.lastUpdatedLabel.text = dataFromJson?["created_on"] as! String?
+//                self.lastUpdatedLabel.text = dataFromJson?["created_on"] as! String?
                print(statusString!)
                 self.setBackGroundColorForStatus(status: statusString!)
+             self.lastUpdatedLabel.text = self.getDateFromJSONData(dateString: dateToChange!)
             }
         }
     }
