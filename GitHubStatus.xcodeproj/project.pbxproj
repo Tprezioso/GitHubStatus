@@ -16,6 +16,7 @@
 		9FBF41051E55E349008688B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBF41031E55E349008688B0 /* LaunchScreen.storyboard */; };
 		9FBF41101E55E349008688B0 /* GitHubStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF410F1E55E349008688B0 /* GitHubStatusTests.swift */; };
 		9FBF411B1E55E349008688B0 /* GitHubStatusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF411A1E55E349008688B0 /* GitHubStatusUITests.swift */; };
+		9FC4F58F1E55E85A00AA5A05 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC4F58E1E55E85A00AA5A05 /* Alamofire.framework */; };
 		A54FCC8BC540DA65AFC5CF12 /* Pods_GitHubStatusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A039C109FC3BDB29E0E8C63 /* Pods_GitHubStatusTests.framework */; };
 		D8F96A09B20102EA3E03096C /* Pods_GitHubStatusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C50A241F795E270A8F13120 /* Pods_GitHubStatusUITests.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		84177B7A59CD838DEAE93C93 /* Pods_GitHubStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubStatus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9474EA209C54A8636522C881 /* Pods-GitHubStatusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStatusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubStatusUITests/Pods-GitHubStatusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9706AC9D5B8E3109C01BDF94 /* Pods-GitHubStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStatus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubStatus/Pods-GitHubStatus.debug.xcconfig"; sourceTree = "<group>"; };
+		9F23C5771E55E6F4003499D6 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Pods/../build/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
 		9FBF40F41E55E349008688B0 /* GitHubStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBF40F71E55E349008688B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FBF40F91E55E349008688B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		9FBF41161E55E349008688B0 /* GitHubStatusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubStatusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBF411A1E55E349008688B0 /* GitHubStatusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubStatusUITests.swift; sourceTree = "<group>"; };
 		9FBF411C1E55E349008688B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC4F58E1E55E85A00AA5A05 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GitHubStatus-eqfukfzpbbvplogobhdbscvsrdti/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		B883FAE050F6EDD2714C50D1 /* Pods-GitHubStatusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStatusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubStatusTests/Pods-GitHubStatusTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC4F58F1E55E85A00AA5A05 /* Alamofire.framework in Frameworks */,
 				6ECAF0AD6DD8279BE7EA5136 /* Pods_GitHubStatus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +165,8 @@
 		CFD9B345C614F0F678826C2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FC4F58E1E55E85A00AA5A05 /* Alamofire.framework */,
+				9F23C5771E55E6F4003499D6 /* AFNetworking.framework */,
 				84177B7A59CD838DEAE93C93 /* Pods_GitHubStatus.framework */,
 				4A039C109FC3BDB29E0E8C63 /* Pods_GitHubStatusTests.framework */,
 				4C50A241F795E270A8F13120 /* Pods_GitHubStatusUITests.framework */,
@@ -606,6 +612,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6JBM5ZNF6C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+				);
 				INFOPLIST_FILE = GitHubStatus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.tom.GitHubStatus;
@@ -620,6 +630,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6JBM5ZNF6C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+				);
 				INFOPLIST_FILE = GitHubStatus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.tom.GitHubStatus;
@@ -709,6 +723,7 @@
 				9FBF41211E55E349008688B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FBF41221E55E349008688B0 /* Build configuration list for PBXNativeTarget "GitHubStatusTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +732,7 @@
 				9FBF41241E55E349008688B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FBF41251E55E349008688B0 /* Build configuration list for PBXNativeTarget "GitHubStatusUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +741,7 @@
 				9FBF41271E55E349008688B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
