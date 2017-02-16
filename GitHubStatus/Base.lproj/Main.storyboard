@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kbm-QA-mjR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Git Status-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GitHubStatus" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,28 +23,89 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZ2-0E-DxP">
-                                <rect key="frame" x="16" y="28" width="343" height="316"/>
+                                <rect key="frame" x="16" y="184" width="343" height="158"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="316" id="1J0-qT-ltU"/>
-                                    <constraint firstAttribute="width" constant="343" id="aJm-78-OhM"/>
+                                    <constraint firstAttribute="width" constant="343" id="36j-Jk-edk"/>
+                                    <constraint firstAttribute="height" constant="158" id="aFu-Hl-h4h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0O-K0-xfe">
+                                <rect key="frame" x="16" y="72" width="343" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="BIm-74-VdQ"/>
+                                    <constraint firstAttribute="height" constant="104" id="wq8-RE-obU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by GitHubStatus API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zg-3S-Pa2">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FCn-kY-hYe"/>
+                                    <constraint firstAttribute="width" constant="343" id="ZCf-L1-MHa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bF-Ze-WCL">
+                                <rect key="frame" x="16" y="350" width="343" height="259"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="259" id="B7V-OC-hxK"/>
+                                    <constraint firstAttribute="width" constant="343" id="tTT-RZ-MaE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="lZ2-0E-DxP" secondAttribute="trailing" id="2ZD-mT-N7p"/>
-                            <constraint firstItem="lZ2-0E-DxP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="NtE-8B-4zv"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="lZ2-0E-DxP" secondAttribute="leading" id="b2w-vx-2xO"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="k0O-K0-xfe" secondAttribute="leading" id="0gZ-BH-HDe"/>
+                            <constraint firstItem="lZ2-0E-DxP" firstAttribute="top" secondItem="k0O-K0-xfe" secondAttribute="bottom" constant="8" id="0iW-lL-n2W"/>
+                            <constraint firstItem="7Zg-3S-Pa2" firstAttribute="top" secondItem="0bF-Ze-WCL" secondAttribute="bottom" constant="8" id="31n-fl-fhI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Zg-3S-Pa2" secondAttribute="bottom" constant="20" id="4KB-8v-gEx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7Zg-3S-Pa2" secondAttribute="leading" id="ERb-yX-gYe"/>
+                            <constraint firstItem="0bF-Ze-WCL" firstAttribute="top" secondItem="lZ2-0E-DxP" secondAttribute="bottom" constant="8" id="Hu9-xj-Or5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Zg-3S-Pa2" secondAttribute="trailing" id="I0d-Q9-jUV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="0bF-Ze-WCL" secondAttribute="leading" id="Lvm-xi-j6M"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="lZ2-0E-DxP" secondAttribute="leading" id="aNV-oz-egV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0bF-Ze-WCL" secondAttribute="trailing" id="dSC-8U-rCx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lZ2-0E-DxP" secondAttribute="trailing" id="ePT-eP-QXp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k0O-K0-xfe" secondAttribute="trailing" id="nrD-lf-B06"/>
+                            <constraint firstItem="k0O-K0-xfe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="tZF-3G-QFu"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Git Status" id="Icy-XU-6an"/>
                     <connections>
+                        <outlet property="bodyLabel" destination="0bF-Ze-WCL" id="TBh-Wh-ene"/>
+                        <outlet property="lastUpdatedLabel" destination="k0O-K0-xfe" id="aNu-AY-yer"/>
                         <outlet property="statusLabel" destination="lZ2-0E-DxP" id="moQ-WP-NRf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="138.0809595202399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cKi-Wf-9yd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kbm-QA-mjR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FLt-uY-XPC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eck-9i-UZV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiu-gW-kk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>

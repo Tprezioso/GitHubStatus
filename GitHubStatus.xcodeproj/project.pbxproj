@@ -17,6 +17,7 @@
 		9FBF41101E55E349008688B0 /* GitHubStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF410F1E55E349008688B0 /* GitHubStatusTests.swift */; };
 		9FBF411B1E55E349008688B0 /* GitHubStatusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF411A1E55E349008688B0 /* GitHubStatusUITests.swift */; };
 		9FC4F58F1E55E85A00AA5A05 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC4F58E1E55E85A00AA5A05 /* Alamofire.framework */; };
+		9FE272801E560916001453AF /* Octicons-mark-github.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE2727F1E560916001453AF /* Octicons-mark-github.svg.png */; };
 		A54FCC8BC540DA65AFC5CF12 /* Pods_GitHubStatusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A039C109FC3BDB29E0E8C63 /* Pods_GitHubStatusTests.framework */; };
 		D8F96A09B20102EA3E03096C /* Pods_GitHubStatusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C50A241F795E270A8F13120 /* Pods_GitHubStatusUITests.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		9FBF411A1E55E349008688B0 /* GitHubStatusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubStatusUITests.swift; sourceTree = "<group>"; };
 		9FBF411C1E55E349008688B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC4F58E1E55E85A00AA5A05 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GitHubStatus-eqfukfzpbbvplogobhdbscvsrdti/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		9FE2727F1E560916001453AF /* Octicons-mark-github.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Octicons-mark-github.svg.png"; path = "../../../../../Google Drive/Octicons-mark-github.svg.png"; sourceTree = "<group>"; };
 		B883FAE050F6EDD2714C50D1 /* Pods-GitHubStatusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStatusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubStatusTests/Pods-GitHubStatusTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 				9FBF41031E55E349008688B0 /* LaunchScreen.storyboard */,
 				9FBF41061E55E349008688B0 /* Info.plist */,
 				9FBF40FE1E55E349008688B0 /* GitHubStatus.xcdatamodeld */,
+				9FE2727F1E560916001453AF /* Octicons-mark-github.svg.png */,
 			);
 			path = GitHubStatus;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				9FBF41051E55E349008688B0 /* LaunchScreen.storyboard in Resources */,
 				9FBF41021E55E349008688B0 /* Assets.xcassets in Resources */,
 				9FBF40FD1E55E349008688B0 /* Main.storyboard in Resources */,
+				9FE272801E560916001453AF /* Octicons-mark-github.svg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
