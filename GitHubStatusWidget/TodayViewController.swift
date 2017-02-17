@@ -23,8 +23,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     func updateLabel() {
         let defaults = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
         let status = defaults!.string(forKey: "status")
-        let body = defaults!.string(forKey: "body")
-        self.wigetLabel.text = "Last GitHub Status Update\n Status: \(status!) \n\(body!)"
+        let lastUpdate = defaults!.string(forKey: "lastUpdate")
+        self.wigetLabel.text = "\(lastUpdate!)\nStatus: \(status!)"
         print(self.wigetLabel.text!)
     }
     

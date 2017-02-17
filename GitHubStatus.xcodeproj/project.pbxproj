@@ -21,6 +21,7 @@
 		9FCC486E1E5762AF00B5594C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC486C1E5762AF00B5594C /* MainInterface.storyboard */; };
 		9FCC48721E5762AF00B5594C /* GitHubStatusWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FCC48661E5762AF00B5594C /* GitHubStatusWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9FCC487B1E5784B400B5594C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC486A1E5762AF00B5594C /* TodayViewController.swift */; };
+		9FCC48851E57B2A400B5594C /* APICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC48841E57B2A400B5594C /* APICalls.swift */; };
 		9FE272801E560916001453AF /* Octicons-mark-github.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE2727F1E560916001453AF /* Octicons-mark-github.svg.png */; };
 		9FE272821E5637C8001453AF /* Octocat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE272811E5637C8001453AF /* Octocat.png */; };
 		A54FCC8BC540DA65AFC5CF12 /* Pods_GitHubStatusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A039C109FC3BDB29E0E8C63 /* Pods_GitHubStatusTests.framework */; };
@@ -97,6 +98,7 @@
 		9FCC486D1E5762AF00B5594C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		9FCC486F1E5762AF00B5594C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FCC487C1E57876F00B5594C /* GitHubStatusWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubStatusWidget.entitlements; sourceTree = "<group>"; };
+		9FCC48841E57B2A400B5594C /* APICalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICalls.swift; sourceTree = "<group>"; };
 		9FE2727F1E560916001453AF /* Octicons-mark-github.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Octicons-mark-github.svg.png"; path = "../../../../../Google Drive/Octicons-mark-github.svg.png"; sourceTree = "<group>"; };
 		9FE272811E5637C8001453AF /* Octocat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Octocat.png; path = "../../../../../Google Drive/Octocat.png"; sourceTree = "<group>"; };
 		B883FAE050F6EDD2714C50D1 /* Pods-GitHubStatusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStatusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubStatusTests/Pods-GitHubStatusTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			children = (
 				9FCC48801E57A78800B5594C /* Entitlements */,
 				9FBF40F71E55E349008688B0 /* AppDelegate.swift */,
+				9FCC48861E57B2B000B5594C /* Model */,
 				9FCC487E1E57A72400B5594C /* ViewController */,
 				9FCC487F1E57A73600B5594C /* View */,
 				9FBF41011E55E349008688B0 /* Assets.xcassets */,
@@ -276,6 +279,14 @@
 				9FCC487C1E57876F00B5594C /* GitHubStatusWidget.entitlements */,
 			);
 			name = WidgetEntitlement;
+			sourceTree = "<group>";
+		};
+		9FCC48861E57B2B000B5594C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FCC48841E57B2A400B5594C /* APICalls.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		CFD9B345C614F0F678826C2F /* Frameworks */ = {
@@ -622,6 +633,7 @@
 			files = (
 				9FBF40FA1E55E349008688B0 /* ViewController.swift in Sources */,
 				9FBF40F81E55E349008688B0 /* AppDelegate.swift in Sources */,
+				9FCC48851E57B2A400B5594C /* APICalls.swift in Sources */,
 				9FBF41001E55E349008688B0 /* GitHubStatus.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

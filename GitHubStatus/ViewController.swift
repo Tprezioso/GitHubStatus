@@ -61,27 +61,48 @@ class ViewController: UIViewController {
         return "Last Updated\n\(month)/\(day)/\(year)"
     }
     
+    func api() {
+        Alamofire.request("https://status.github.com/api/status.json").responseJSON { response in
+            if let JSON = response.result.value {
+                let data = JSON as? [String: Any]
+                let status = data?["status"] as! String?
+                self.statusLabel.text = " Status: \(status!)"
+                let date = data?["last_updated"] as! String?
+                self.setBackGroundColorForStatus(status: status!)
+                self.lastUpdatedLabel.text = self.getDateFromJSONData(dateString: date!)
+                print("\(status)\(date)")
+                let extenstionDefault = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
+                extenstionDefault?.set(self.statusLabel.text, forKey: "status")
+                extenstionDefault?.set(self.lastUpdatedLabel.text, forKey: "lastUpdate")
+                extenstionDefault?.synchronize()
+                
+            }
+        }
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        Alamofire.request("https://status.github.com/api/last-message.json").responseJSON { response in
-            if let JSON = response.result.value {
-                print("JSON: \(JSON)")
-                let dataFromJson = JSON as? [String: Any]
-                let statusString = dataFromJson?["status"] as! String?
-                let dateToChange = dataFromJson?["created_on"] as! String?
-                let bodyString = dataFromJson?["body"] as! String?
-                self.statusLabel.text = "GitHub Status\n\(statusString!)"
-                self.bodyLabel.text = dataFromJson?["body"] as! String?
-                self.setBackGroundColorForStatus(status: statusString!)
-                self.lastUpdatedLabel.text = self.getDateFromJSONData(dateString: dateToChange!)
-                let extenstionDefault = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
-                extenstionDefault?.set(statusString, forKey: "status")
-                extenstionDefault?.set(bodyString, forKey: "body")
-                extenstionDefault?.synchronize()
-                print("\(extenstionDefault?.value(forKey: "status")!)")
-            }
-        }
+        api()
+        //        Alamofire.request("https://status.github.com/api/last-message.json").responseJSON { response in
+//            if let JSON = response.result.value {
+//                print("JSON: \(JSON)")
+//                let dataFromJson = JSON as? [String: Any]
+//                let statusString = dataFromJson?["status"] as! String?
+//                let dateToChange = dataFromJson?["created_on"] as! String?
+//                let bodyString = dataFromJson?["body"] as! String?
+//                self.statusLabel.text = "GitHub Status\n\(statusString!)"
+//                self.bodyLabel.text = dataFromJson?["body"] as! String?
+//                self.setBackGroundColorForStatus(status: statusString!)
+//                self.lastUpdatedLabel.text = self.getDateFromJSONData(dateString: dateToChange!)
+//                let extenstionDefault = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
+//                extenstionDefault?.set(statusString, forKey: "status")
+//                extenstionDefault?.set(bodyString, forKey: "body")
+//                extenstionDefault?.synchronize()
+//                print("\(extenstionDefault?.value(forKey: "status")!)")
+//            }
+//        }
     }
 }
 
