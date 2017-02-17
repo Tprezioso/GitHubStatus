@@ -179,16 +179,14 @@
 		9FBF40F61E55E349008688B0 /* GitHubStatus */ = {
 			isa = PBXGroup;
 			children = (
-				9FCC48611E57613700B5594C /* GitHubStatus.entitlements */,
+				9FCC48801E57A78800B5594C /* Entitlements */,
 				9FBF40F71E55E349008688B0 /* AppDelegate.swift */,
-				9FBF40F91E55E349008688B0 /* ViewController.swift */,
-				9FBF40FB1E55E349008688B0 /* Main.storyboard */,
+				9FCC487E1E57A72400B5594C /* ViewController */,
+				9FCC487F1E57A73600B5594C /* View */,
 				9FBF41011E55E349008688B0 /* Assets.xcassets */,
-				9FBF41031E55E349008688B0 /* LaunchScreen.storyboard */,
 				9FBF41061E55E349008688B0 /* Info.plist */,
 				9FBF40FE1E55E349008688B0 /* GitHubStatus.xcdatamodeld */,
-				9FE2727F1E560916001453AF /* Octicons-mark-github.svg.png */,
-				9FE272811E5637C8001453AF /* Octocat.png */,
+				9FCC487D1E57A71C00B5594C /* Images */,
 			);
 			path = GitHubStatus;
 			sourceTree = "<group>";
@@ -214,12 +212,70 @@
 		9FCC48691E5762AF00B5594C /* GitHubStatusWidget */ = {
 			isa = PBXGroup;
 			children = (
-				9FCC487C1E57876F00B5594C /* GitHubStatusWidget.entitlements */,
-				9FCC486A1E5762AF00B5594C /* TodayViewController.swift */,
-				9FCC486C1E5762AF00B5594C /* MainInterface.storyboard */,
+				9FCC48831E57A7D000B5594C /* WidgetEntitlement */,
+				9FCC48811E57A7B000B5594C /* WidgetViewController */,
+				9FCC48821E57A7C400B5594C /* WidetView */,
 				9FCC486F1E5762AF00B5594C /* Info.plist */,
 			);
 			path = GitHubStatusWidget;
+			sourceTree = "<group>";
+		};
+		9FCC487D1E57A71C00B5594C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9FE2727F1E560916001453AF /* Octicons-mark-github.svg.png */,
+				9FE272811E5637C8001453AF /* Octocat.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9FCC487E1E57A72400B5594C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9FBF40F91E55E349008688B0 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		9FCC487F1E57A73600B5594C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FBF40FB1E55E349008688B0 /* Main.storyboard */,
+				9FBF41031E55E349008688B0 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9FCC48801E57A78800B5594C /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+				9FCC48611E57613700B5594C /* GitHubStatus.entitlements */,
+			);
+			name = Entitlements;
+			sourceTree = "<group>";
+		};
+		9FCC48811E57A7B000B5594C /* WidgetViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9FCC486A1E5762AF00B5594C /* TodayViewController.swift */,
+			);
+			name = WidgetViewController;
+			sourceTree = "<group>";
+		};
+		9FCC48821E57A7C400B5594C /* WidetView */ = {
+			isa = PBXGroup;
+			children = (
+				9FCC486C1E5762AF00B5594C /* MainInterface.storyboard */,
+			);
+			name = WidetView;
+			sourceTree = "<group>";
+		};
+		9FCC48831E57A7D000B5594C /* WidgetEntitlement */ = {
+			isa = PBXGroup;
+			children = (
+				9FCC487C1E57876F00B5594C /* GitHubStatusWidget.entitlements */,
+			);
+			name = WidgetEntitlement;
 			sourceTree = "<group>";
 		};
 		CFD9B345C614F0F678826C2F /* Frameworks */ = {
