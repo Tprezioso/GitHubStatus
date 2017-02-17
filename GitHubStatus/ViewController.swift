@@ -85,7 +85,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupViews()
         api()
-        //        Alamofire.request("https://status.github.com/api/last-message.json").responseJSON { response in
+// MARK: This is last update from a person api call... dont know if we should let this go
+//        Alamofire.request("https://status.github.com/api/last-message.json").responseJSON { response in
 //            if let JSON = response.result.value {
 //                print("JSON: \(JSON)")
 //                let dataFromJson = JSON as? [String: Any]
