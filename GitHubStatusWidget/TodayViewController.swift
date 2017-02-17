@@ -16,6 +16,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
+        self.navigationItem.title = "GitHub Status"
         updateLabel()
     }
     
@@ -23,7 +24,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         let defaults = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
         let status = defaults!.string(forKey: "status")
         let body = defaults!.string(forKey: "body")
-        self.wigetLabel.text = "GitHub Status\n\(status!) \n\(body!)"
+        self.wigetLabel.text = "Last GitHub Status Update\n Status: \(status!) \n\(body!)"
         print(self.wigetLabel.text!)
     }
     

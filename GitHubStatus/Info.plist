@@ -2,19 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIApplicationShortcutItems</key>
-	<array>
-		<dict/>
-        <key>shortcut</key>
-        <dict>
-            <key>UIApplicationShortcutItemType</key>
-            <string>tom.io.appshortcut.status</string>
-            <key>UIApplicationShortcutItemTitle</key>
-            <string>Status</string>
-        </dict>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>GitHub Status</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -31,6 +22,17 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict/>
+		<string>shortcut</string>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Status</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>tom.io.appshortcut.status</string>
+		</dict>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
