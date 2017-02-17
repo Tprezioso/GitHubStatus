@@ -70,10 +70,16 @@ class ViewController: UIViewController {
                 let dataFromJson = JSON as? [String: Any]
                 let statusString = dataFromJson?["status"] as! String?
                 let dateToChange = dataFromJson?["created_on"] as! String?
+                let bodyString = dataFromJson?["body"] as! String?
                 self.statusLabel.text = "GitHub Status\n\(statusString!)"
                 self.bodyLabel.text = dataFromJson?["body"] as! String?
                 self.setBackGroundColorForStatus(status: statusString!)
                 self.lastUpdatedLabel.text = self.getDateFromJSONData(dateString: dateToChange!)
+                let extenstionDefault = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
+                extenstionDefault?.set(statusString, forKey: "status")
+                extenstionDefault?.set(bodyString, forKey: "body")
+                extenstionDefault?.synchronize()
+                print("\(extenstionDefault?.value(forKey: "status")!)")
             }
         }
     }

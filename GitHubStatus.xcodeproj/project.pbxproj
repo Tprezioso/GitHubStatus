@@ -17,6 +17,10 @@
 		9FBF41101E55E349008688B0 /* GitHubStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF410F1E55E349008688B0 /* GitHubStatusTests.swift */; };
 		9FBF411B1E55E349008688B0 /* GitHubStatusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF411A1E55E349008688B0 /* GitHubStatusUITests.swift */; };
 		9FC4F58F1E55E85A00AA5A05 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC4F58E1E55E85A00AA5A05 /* Alamofire.framework */; };
+		9FCC48681E5762AF00B5594C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC48671E5762AF00B5594C /* NotificationCenter.framework */; };
+		9FCC486E1E5762AF00B5594C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC486C1E5762AF00B5594C /* MainInterface.storyboard */; };
+		9FCC48721E5762AF00B5594C /* GitHubStatusWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FCC48661E5762AF00B5594C /* GitHubStatusWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9FCC487B1E5784B400B5594C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC486A1E5762AF00B5594C /* TodayViewController.swift */; };
 		9FE272801E560916001453AF /* Octicons-mark-github.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE2727F1E560916001453AF /* Octicons-mark-github.svg.png */; };
 		9FE272821E5637C8001453AF /* Octocat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE272811E5637C8001453AF /* Octocat.png */; };
 		A54FCC8BC540DA65AFC5CF12 /* Pods_GitHubStatusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A039C109FC3BDB29E0E8C63 /* Pods_GitHubStatusTests.framework */; };
@@ -38,7 +42,28 @@
 			remoteGlobalIDString = 9FBF40F31E55E349008688B0;
 			remoteInfo = GitHubStatus;
 		};
+		9FCC48701E5762AF00B5594C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FBF40EC1E55E349008688B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FCC48651E5762AF00B5594C;
+			remoteInfo = GitHubStatusWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9FCC48761E5762AF00B5594C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9FCC48721E5762AF00B5594C /* GitHubStatusWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0EEF84CB6AA64B91FBE821AE /* Pods-GitHubStatusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStatusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubStatusTests/Pods-GitHubStatusTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +90,13 @@
 		9FBF411A1E55E349008688B0 /* GitHubStatusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubStatusUITests.swift; sourceTree = "<group>"; };
 		9FBF411C1E55E349008688B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC4F58E1E55E85A00AA5A05 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GitHubStatus-eqfukfzpbbvplogobhdbscvsrdti/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		9FCC48611E57613700B5594C /* GitHubStatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubStatus.entitlements; sourceTree = "<group>"; };
+		9FCC48661E5762AF00B5594C /* GitHubStatusWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GitHubStatusWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCC48671E5762AF00B5594C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		9FCC486A1E5762AF00B5594C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		9FCC486D1E5762AF00B5594C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9FCC486F1E5762AF00B5594C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FCC487C1E57876F00B5594C /* GitHubStatusWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubStatusWidget.entitlements; sourceTree = "<group>"; };
 		9FE2727F1E560916001453AF /* Octicons-mark-github.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Octicons-mark-github.svg.png"; path = "../../../../../Google Drive/Octicons-mark-github.svg.png"; sourceTree = "<group>"; };
 		9FE272811E5637C8001453AF /* Octocat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Octocat.png; path = "../../../../../Google Drive/Octocat.png"; sourceTree = "<group>"; };
 		B883FAE050F6EDD2714C50D1 /* Pods-GitHubStatusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStatusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubStatusTests/Pods-GitHubStatusTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +128,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FCC48631E5762AF00B5594C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCC48681E5762AF00B5594C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -118,6 +158,7 @@
 				9FBF40F61E55E349008688B0 /* GitHubStatus */,
 				9FBF410E1E55E349008688B0 /* GitHubStatusTests */,
 				9FBF41191E55E349008688B0 /* GitHubStatusUITests */,
+				9FCC48691E5762AF00B5594C /* GitHubStatusWidget */,
 				9FBF40F51E55E349008688B0 /* Products */,
 				5C2A7C943EA0C48D3C288970 /* Pods */,
 				CFD9B345C614F0F678826C2F /* Frameworks */,
@@ -130,6 +171,7 @@
 				9FBF40F41E55E349008688B0 /* GitHubStatus.app */,
 				9FBF410B1E55E349008688B0 /* GitHubStatusTests.xctest */,
 				9FBF41161E55E349008688B0 /* GitHubStatusUITests.xctest */,
+				9FCC48661E5762AF00B5594C /* GitHubStatusWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +179,7 @@
 		9FBF40F61E55E349008688B0 /* GitHubStatus */ = {
 			isa = PBXGroup;
 			children = (
+				9FCC48611E57613700B5594C /* GitHubStatus.entitlements */,
 				9FBF40F71E55E349008688B0 /* AppDelegate.swift */,
 				9FBF40F91E55E349008688B0 /* ViewController.swift */,
 				9FBF40FB1E55E349008688B0 /* Main.storyboard */,
@@ -168,6 +211,17 @@
 			path = GitHubStatusUITests;
 			sourceTree = "<group>";
 		};
+		9FCC48691E5762AF00B5594C /* GitHubStatusWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9FCC487C1E57876F00B5594C /* GitHubStatusWidget.entitlements */,
+				9FCC486A1E5762AF00B5594C /* TodayViewController.swift */,
+				9FCC486C1E5762AF00B5594C /* MainInterface.storyboard */,
+				9FCC486F1E5762AF00B5594C /* Info.plist */,
+			);
+			path = GitHubStatusWidget;
+			sourceTree = "<group>";
+		};
 		CFD9B345C614F0F678826C2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +230,7 @@
 				84177B7A59CD838DEAE93C93 /* Pods_GitHubStatus.framework */,
 				4A039C109FC3BDB29E0E8C63 /* Pods_GitHubStatusTests.framework */,
 				4C50A241F795E270A8F13120 /* Pods_GitHubStatusUITests.framework */,
+				9FCC48671E5762AF00B5594C /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,10 +248,12 @@
 				9FBF40F21E55E349008688B0 /* Resources */,
 				18B7474AF287FCFA3AC4685D /* [CP] Embed Pods Frameworks */,
 				3BFC0AEF7A5B72B3B3F84326 /* [CP] Copy Pods Resources */,
+				9FCC48761E5762AF00B5594C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9FCC48711E5762AF00B5594C /* PBXTargetDependency */,
 			);
 			name = GitHubStatus;
 			productName = GitHubStatus;
@@ -245,6 +302,23 @@
 			productReference = 9FBF41161E55E349008688B0 /* GitHubStatusUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9FCC48651E5762AF00B5594C /* GitHubStatusWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FCC48731E5762AF00B5594C /* Build configuration list for PBXNativeTarget "GitHubStatusWidget" */;
+			buildPhases = (
+				9FCC48621E5762AF00B5594C /* Sources */,
+				9FCC48631E5762AF00B5594C /* Frameworks */,
+				9FCC48641E5762AF00B5594C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitHubStatusWidget;
+			productName = GitHubStatusWidget;
+			productReference = 9FCC48661E5762AF00B5594C /* GitHubStatusWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,6 +333,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 6JBM5ZNF6C;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					9FBF410A1E55E349008688B0 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -271,6 +350,16 @@
 						DevelopmentTeam = 6JBM5ZNF6C;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9FBF40F31E55E349008688B0;
+					};
+					9FCC48651E5762AF00B5594C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6JBM5ZNF6C;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -290,6 +379,7 @@
 				9FBF40F31E55E349008688B0 /* GitHubStatus */,
 				9FBF410A1E55E349008688B0 /* GitHubStatusTests */,
 				9FBF41151E55E349008688B0 /* GitHubStatusUITests */,
+				9FCC48651E5762AF00B5594C /* GitHubStatusWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -318,6 +408,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCC48641E5762AF00B5594C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCC486E1E5762AF00B5594C /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +586,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FCC48621E5762AF00B5594C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCC487B1E5784B400B5594C /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -500,6 +606,11 @@
 			isa = PBXTargetDependency;
 			target = 9FBF40F31E55E349008688B0 /* GitHubStatus */;
 			targetProxy = 9FBF41171E55E349008688B0 /* PBXContainerItemProxy */;
+		};
+		9FCC48711E5762AF00B5594C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FCC48651E5762AF00B5594C /* GitHubStatusWidget */;
+			targetProxy = 9FCC48701E5762AF00B5594C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -518,6 +629,14 @@
 				9FBF41041E55E349008688B0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9FCC486C1E5762AF00B5594C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FCC486D1E5762AF00B5594C /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -618,7 +737,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9706AC9D5B8E3109C01BDF94 /* Pods-GitHubStatus.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GitHubStatus/GitHubStatus.entitlements;
 				DEVELOPMENT_TEAM = 6JBM5ZNF6C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -636,7 +757,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 425D83490898FBD6A07B6C17 /* Pods-GitHubStatus.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GitHubStatus/GitHubStatus.entitlements;
 				DEVELOPMENT_TEAM = 6JBM5ZNF6C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -712,6 +835,34 @@
 			};
 			name = Release;
 		};
+		9FCC48741E5762AF00B5594C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GitHubStatusWidget/GitHubStatusWidget.entitlements;
+				DEVELOPMENT_TEAM = 6JBM5ZNF6C;
+				INFOPLIST_FILE = GitHubStatusWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.tom.GitHubStatus.GitHubStatusWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9FCC48751E5762AF00B5594C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GitHubStatusWidget/GitHubStatusWidget.entitlements;
+				DEVELOPMENT_TEAM = 6JBM5ZNF6C;
+				INFOPLIST_FILE = GitHubStatusWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.tom.GitHubStatus.GitHubStatusWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -750,6 +901,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9FCC48731E5762AF00B5594C /* Build configuration list for PBXNativeTarget "GitHubStatusWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCC48741E5762AF00B5594C /* Debug */,
+				9FCC48751E5762AF00B5594C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
