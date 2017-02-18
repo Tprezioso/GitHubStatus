@@ -80,7 +80,7 @@ class ViewController: UIViewController {
                 self.lastUpdatedLabel.text = self.getDateFromJSONData(dateString: date!)
                 print("\(status)\(date)")
                 let extenstionDefault = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
-                extenstionDefault?.set(self.statusLabel.text, forKey: "status")
+                extenstionDefault?.set(status!, forKey: "status")
                 extenstionDefault?.set(self.lastUpdatedLabel.text, forKey: "lastUpdate")
                 extenstionDefault?.synchronize()
                 

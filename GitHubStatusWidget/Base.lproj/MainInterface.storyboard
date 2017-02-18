@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,16 +23,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
-                                <rect key="frame" x="20" y="8" width="280" height="21"/>
+                                <rect key="frame" x="84" y="8" width="124" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="8AT-bM-EQ2"/>
+                                    <constraint firstAttribute="height" constant="21" id="hJk-7Q-9i5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Octicons-mark-github.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHu-Fx-Rs2">
+                                <rect key="frame" x="16" y="4" width="60" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="TDw-Wd-Cv9"/>
+                                    <constraint firstAttribute="width" constant="60" id="jMa-mJ-Hua"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPm-Qc-kR4">
+                                <rect key="frame" x="216" y="8" width="88" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.28488808862399506" blue="0.397557909119159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PUl-aZ-wLg"/>
+                                    <constraint firstAttribute="width" constant="88" id="ZEY-da-EOC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.046040507584938828" blue="0.046547524268417018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="8" symbolic="YES" id="0Q0-KW-PJ6"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="20" symbolic="YES" id="6Vq-gs-PHe"/>
-                            <constraint firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="20" symbolic="YES" id="L8K-9R-egU"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" symbolic="YES" id="mYS-Cv-VNx"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="gHu-Fx-Rs2" secondAttribute="trailing" constant="8" id="093-ht-lrY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WPm-Qc-kR4" secondAttribute="trailing" id="2Xs-UJ-Vsw"/>
+                            <constraint firstItem="gHu-Fx-Rs2" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="4" id="3rh-DU-4dR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="96" id="4aZ-bm-ayE"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="WPm-Qc-kR4" secondAttribute="bottom" constant="8" id="9Ph-8h-C7f"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gHu-Fx-Rs2" secondAttribute="leading" id="FP9-SW-mpK"/>
+                            <constraint firstItem="WPm-Qc-kR4" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="L6S-Sf-Fwa"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="XWz-pp-4SR"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="8" id="YN7-3B-Tmx"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="gHu-Fx-Rs2" secondAttribute="bottom" constant="4" id="cFz-df-6yC"/>
+                            <constraint firstItem="WPm-Qc-kR4" firstAttribute="leading" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="8" id="okm-gf-dhn"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -41,11 +77,16 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="37"/>
                     <connections>
+                        <outlet property="statusLabel" destination="WPm-Qc-kR4" id="zYL-Zx-9XK"/>
                         <outlet property="wigetLabel" destination="GcN-lo-r42" id="04z-kl-b9v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33.600000000000001" y="38.23088455772114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Octicons-mark-github.svg.png" width="2000" height="2000"/>
+    </resources>
 </document>

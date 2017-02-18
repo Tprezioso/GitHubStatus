@@ -22,6 +22,7 @@
 		9FCC48721E5762AF00B5594C /* GitHubStatusWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FCC48661E5762AF00B5594C /* GitHubStatusWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9FCC487B1E5784B400B5594C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC486A1E5762AF00B5594C /* TodayViewController.swift */; };
 		9FCC48851E57B2A400B5594C /* APICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC48841E57B2A400B5594C /* APICalls.swift */; };
+		9FCC48871E57CD0F00B5594C /* Octicons-mark-github.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE2727F1E560916001453AF /* Octicons-mark-github.svg.png */; };
 		9FE272801E560916001453AF /* Octicons-mark-github.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE2727F1E560916001453AF /* Octicons-mark-github.svg.png */; };
 		9FE272821E5637C8001453AF /* Octocat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE272811E5637C8001453AF /* Octocat.png */; };
 		A54FCC8BC540DA65AFC5CF12 /* Pods_GitHubStatusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A039C109FC3BDB29E0E8C63 /* Pods_GitHubStatusTests.framework */; };
@@ -483,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCC486E1E5762AF00B5594C /* MainInterface.storyboard in Resources */,
+				9FCC48871E57CD0F00B5594C /* Octicons-mark-github.svg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
