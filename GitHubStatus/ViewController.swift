@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var statusLabel: UILabel!
     @IBOutlet var lastUpdatedLabel: UILabel!
     @IBOutlet var bodyLabel: UILabel!
+    @IBOutlet var octocatImage: UIImageView!
 
     func setupViews() {
         let navImage : UIImage = UIImage(named: "Octicons-mark-github.svg.png")!
@@ -31,6 +32,11 @@ class ViewController: UIViewController {
         backgroundImageView.contentMode = .scaleAspectFit
         backgroundImageView.image = backgroundImage
         self.view.insertSubview(backgroundImageView, at: 0)
+ 
+        let octImage : UIImage = UIImage(named: "Octocat.png")!
+        octocatImage.contentMode = .scaleAspectFit
+        octocatImage.image = octImage
+    
     }
     
     func setBackGroundColorForStatus(status:String) {
@@ -39,6 +45,8 @@ class ViewController: UIViewController {
             self.view.backgroundColor = UIColor.green
         case "minor":
             self.view.backgroundColor = UIColor.yellow
+            self.lastUpdatedLabel.textColor = UIColor.black
+            self.statusLabel.textColor = UIColor.black
         case "major":
             self.view.backgroundColor = UIColor.red
         default:
