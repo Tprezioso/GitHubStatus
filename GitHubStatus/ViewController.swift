@@ -78,40 +78,18 @@ class ViewController: UIViewController {
                 let date = data?["last_updated"] as! String?
                 self.setBackGroundColorForStatus(status: status!)
                 self.lastUpdatedLabel.text = self.getDateFromJSONData(dateString: date!)
-                print("\(status)\(date)")
                 let extenstionDefault = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
                 extenstionDefault?.set(status!, forKey: "status")
                 extenstionDefault?.set(self.lastUpdatedLabel.text, forKey: "lastUpdate")
                 extenstionDefault?.synchronize()
-                
             }
         }
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         api()
-// MARK: This is last update from a person api call... dont know if we should let this go
-//        Alamofire.request("https://status.github.com/api/last-message.json").responseJSON { response in
-//            if let JSON = response.result.value {
-//                print("JSON: \(JSON)")
-//                let dataFromJson = JSON as? [String: Any]
-//                let statusString = dataFromJson?["status"] as! String?
-//                let dateToChange = dataFromJson?["created_on"] as! String?
-//                let bodyString = dataFromJson?["body"] as! String?
-//                self.statusLabel.text = "GitHub Status\n\(statusString!)"
-//                self.bodyLabel.text = dataFromJson?["body"] as! String?
-//                self.setBackGroundColorForStatus(status: statusString!)
-//                self.lastUpdatedLabel.text = self.getDateFromJSONData(dateString: dateToChange!)
-//                let extenstionDefault = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
-//                extenstionDefault?.set(statusString, forKey: "status")
-//                extenstionDefault?.set(bodyString, forKey: "body")
-//                extenstionDefault?.synchronize()
-//                print("\(extenstionDefault?.value(forKey: "status")!)")
-//            }
-//        }
     }
 }
 
