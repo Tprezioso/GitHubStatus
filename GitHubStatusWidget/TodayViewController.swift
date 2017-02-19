@@ -33,7 +33,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             self.statusLabel.backgroundColor = UIColor.white
         }
     }
-
     
     func updateLabel() {
         let defaults = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
@@ -45,11 +44,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         print("\(status!)")
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         
@@ -59,5 +53,4 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         completionHandler(NCUpdateResult.newData)
     }
-    
 }
