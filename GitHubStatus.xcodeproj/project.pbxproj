@@ -182,7 +182,6 @@
 			children = (
 				9FCC48801E57A78800B5594C /* Entitlements */,
 				9FBF40F71E55E349008688B0 /* AppDelegate.swift */,
-				9FCC48861E57B2B000B5594C /* Model */,
 				9FCC487E1E57A72400B5594C /* ViewController */,
 				9FCC487F1E57A73600B5594C /* View */,
 				9FBF41011E55E349008688B0 /* Assets.xcassets */,
@@ -278,13 +277,6 @@
 				9FCC487C1E57876F00B5594C /* GitHubStatusWidget.entitlements */,
 			);
 			name = WidgetEntitlement;
-			sourceTree = "<group>";
-		};
-		9FCC48861E57B2B000B5594C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		CFD9B345C614F0F678826C2F /* Frameworks */ = {
