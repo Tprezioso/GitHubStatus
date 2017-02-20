@@ -36,7 +36,6 @@ class ViewController: UIViewController {
         let octImage : UIImage = UIImage(named: "Octocat.png")!
         octocatImage.contentMode = .scaleAspectFit
         octocatImage.image = octImage
-    
     }
     
     func setBackGroundColorForStatus(status:String) {
