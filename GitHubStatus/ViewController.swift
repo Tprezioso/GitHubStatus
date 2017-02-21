@@ -84,11 +84,14 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+
+    func startTheApp() {
         setupViews()
         api()
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        startTheApp()
     }
 }
 
