@@ -6,7 +6,6 @@ target 'GitHubStatus' do
   use_frameworks!
   pod 'Alamofire', '~> 4.3'
   # Pods for GitHubStatus
-
   target 'GitHubStatusTests' do
     inherit! :search_paths
     # Pods for testing
@@ -17,4 +16,8 @@ target 'GitHubStatus' do
     # Pods for testing
   end
 
+end
+target 'GitHubStatusWidget' do
+  use_frameworks!
+  pod 'Alamofire', '~> 4.3'
 end

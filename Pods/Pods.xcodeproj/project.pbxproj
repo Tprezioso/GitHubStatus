@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */; };
-		1A3F76A921FF2281A8E4A9E881B7D5B1 /* Pods-GitHubStatusUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E862D5728E3BB1A217662116ABCAEE3 /* Pods-GitHubStatusUITests-dummy.m */; };
+		1A3F76A921FF2281A8E4A9E881B7D5B1 /* Pods-GitHubStatusUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 267972B6A32DE20C8D9163EE865CCD3C /* Pods-GitHubStatusUITests-dummy.m */; };
 		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B44A27EFBB0DA84D738057B77F3413B1 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */; };
 		4062035C02E8EB13538AA928272326C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E230A0448B394DE26E688DAC8E6201E /* Request.swift */; };
 		58F877B77E947AD7DF678199F2619CA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		5CB329E5A570920D897010CEC2EC4CE6 /* Pods-GitHubStatus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D6078D0D4ED0083E133C2F69DC8026 /* Pods-GitHubStatus-dummy.m */; };
+		5A04F04F25E5007BFC74C5A7DDE65D1B /* Pods-GitHubStatusWidget-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36BFDC053466314883ED0DD402FF4B39 /* Pods-GitHubStatusWidget-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CB329E5A570920D897010CEC2EC4CE6 /* Pods-GitHubStatus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D457C015BAFAC214C38D1B6717DE3EC0 /* Pods-GitHubStatus-dummy.m */; };
 		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */; };
 		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */; };
 		6D7EBE682092EF067D9BC2F2699984CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */; };
 		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */; };
 		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */; };
-		9EFB68608CA20AA251EB2E9F2EF2BD58 /* Pods-GitHubStatusUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A747A5DF89245161859DFEBFD50DBF8A /* Pods-GitHubStatusUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EFB68608CA20AA251EB2E9F2EF2BD58 /* Pods-GitHubStatusUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69AD3ED3BBAA5F30F80BFFDA881AB082 /* Pods-GitHubStatusUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A02BB77470ECF719A123EE78539828C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */; };
 		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1C119BCE81C53F76CAC2BE27C38E0 /* Alamofire-dummy.m */; };
@@ -29,13 +31,14 @@
 		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */; };
 		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */; };
 		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */; };
-		C3DAD2A575A9EB5FAB6014F6458F21F9 /* Pods-GitHubStatus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70131D06C31E96FDDB47ED75EAB9694F /* Pods-GitHubStatus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C657188C38772A3524764749844B0F35 /* Pods-GitHubStatusTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B366DFD5E371AD056042DB35EBE0B16 /* Pods-GitHubStatusTests-dummy.m */; };
+		C3DAD2A575A9EB5FAB6014F6458F21F9 /* Pods-GitHubStatus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B13FE5CBA94F435FA812540BCDACAFE /* Pods-GitHubStatus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C657188C38772A3524764749844B0F35 /* Pods-GitHubStatusTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F23078530BF21AA90C9DB73724D11B1B /* Pods-GitHubStatusTests-dummy.m */; };
 		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */; };
+		E4BE0C31953AB6475042870505A397AD /* Pods-GitHubStatusWidget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3733BC521EDC2575A085F4BB62CE14CB /* Pods-GitHubStatusWidget-dummy.m */; };
 		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */; };
 		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */; };
 		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */; };
-		FD7DCDBE133251C2D96166C68CE29937 /* Pods-GitHubStatusTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DC28B3B393F6A13A8379EBE3B7FD733 /* Pods-GitHubStatusTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD7DCDBE133251C2D96166C68CE29937 /* Pods-GitHubStatusTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF62FA376EFD6A575AAE2E8C0E2429E /* Pods-GitHubStatusTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,68 +49,85 @@
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
+		E1E9FF8AF4304400E6DF406341D61424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		024002410EC9564FC225E528F6BE63F7 /* Pods-GitHubStatusUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatusUITests-resources.sh"; sourceTree = "<group>"; };
 		04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		0C6787480066C57AF6CF444B63438F14 /* Pods-GitHubStatus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GitHubStatus-acknowledgements.markdown"; sourceTree = "<group>"; };
+		08FD1B4E3E5654975991279A78CC575F /* Pods-GitHubStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatus.debug.xcconfig"; sourceTree = "<group>"; };
+		0BA412E6B1CC98A82CBC850C6968F60C /* Pods-GitHubStatusTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatusTests-frameworks.sh"; sourceTree = "<group>"; };
+		0DF76D894E4B7427CF2844CFB2305072 /* Pods-GitHubStatus-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatus-resources.sh"; sourceTree = "<group>"; };
+		0EF99E38209E2CAB2444AE71D5B959B7 /* Pods-GitHubStatusWidget-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GitHubStatusWidget-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		13A0A663B36A229C69D5274A83E93F88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		163FBC3E6B5E057A36663646578F97BE /* Pods-GitHubStatus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatus-frameworks.sh"; sourceTree = "<group>"; };
 		195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		19B7D21C54B3BF4195769AA5E6BFBB7C /* Pods-GitHubStatus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GitHubStatus-acknowledgements.plist"; sourceTree = "<group>"; };
-		1AD4136156C0CE67293778A7016FFD5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E230A0448B394DE26E688DAC8E6201E /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		1FE71072EF425EC26A388D97798E4C8C /* Pods_GitHubStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GitHubStatus.framework; path = "Pods-GitHubStatus.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20DB7D1A89B2C9DCFD243330C593ED1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22C1C119BCE81C53F76CAC2BE27C38E0 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		2A820C046542874A8E18C9588679C893 /* Pods-GitHubStatusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatusUITests.release.xcconfig"; sourceTree = "<group>"; };
-		2F0AF30650EF89E8C7C6DFE8DCD2FE54 /* Pods-GitHubStatusUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GitHubStatusUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		267972B6A32DE20C8D9163EE865CCD3C /* Pods-GitHubStatusUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GitHubStatusUITests-dummy.m"; sourceTree = "<group>"; };
+		26D6B78A82E92F76688CA9CDE9C19D28 /* Pods-GitHubStatus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GitHubStatus-acknowledgements.plist"; sourceTree = "<group>"; };
+		2829FEFA20E2E813E7226215EF82FE8A /* Pods-GitHubStatusWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatusWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		3BE91CC6AA40522CC4C0D711108940F7 /* Pods-GitHubStatusUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GitHubStatusUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		36BFDC053466314883ED0DD402FF4B39 /* Pods-GitHubStatusWidget-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GitHubStatusWidget-umbrella.h"; sourceTree = "<group>"; };
+		36D054DD35023B07641F5AB5F763D5F3 /* Pods-GitHubStatus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GitHubStatus-acknowledgements.markdown"; sourceTree = "<group>"; };
+		36D960B1B649D0BC5AF30CA82547F05D /* Pods-GitHubStatusWidget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GitHubStatusWidget.modulemap"; sourceTree = "<group>"; };
+		3733BC521EDC2575A085F4BB62CE14CB /* Pods-GitHubStatusWidget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GitHubStatusWidget-dummy.m"; sourceTree = "<group>"; };
+		3CD0093CBE502FE89C18EC20CD3FD222 /* Pods-GitHubStatus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GitHubStatus.modulemap"; sourceTree = "<group>"; };
 		3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		4048332132AFB00EB981B2C6A19EAAAA /* Pods-GitHubStatusUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GitHubStatusUITests.modulemap"; sourceTree = "<group>"; };
 		46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		4836D10DFA7ADE7F0164F0D9A062BCEC /* Pods-GitHubStatusTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GitHubStatusTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		4E94779B811C8BA6171321A5DC6AAB92 /* Pods-GitHubStatusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatusTests.release.xcconfig"; sourceTree = "<group>"; };
-		59D19E28657381F871A27A8056AA3DE4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B366DFD5E371AD056042DB35EBE0B16 /* Pods-GitHubStatusTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GitHubStatusTests-dummy.m"; sourceTree = "<group>"; };
+		4DCDC868E003FC629D22ACE74DAD4A72 /* Pods-GitHubStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatus.release.xcconfig"; sourceTree = "<group>"; };
+		5920BE3E834BE27D71FD4F41A18B6282 /* Pods-GitHubStatus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatus-frameworks.sh"; sourceTree = "<group>"; };
+		5AF62FA376EFD6A575AAE2E8C0E2429E /* Pods-GitHubStatusTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GitHubStatusTests-umbrella.h"; sourceTree = "<group>"; };
 		6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		70131D06C31E96FDDB47ED75EAB9694F /* Pods-GitHubStatus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GitHubStatus-umbrella.h"; sourceTree = "<group>"; };
-		7BB1E19D00DB61EEA2E4443489DE0A58 /* Pods-GitHubStatusUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GitHubStatusUITests.modulemap"; sourceTree = "<group>"; };
+		69AD3ED3BBAA5F30F80BFFDA881AB082 /* Pods-GitHubStatusUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GitHubStatusUITests-umbrella.h"; sourceTree = "<group>"; };
+		6AE808007BCC0CC3A500B877D3769825 /* Pods-GitHubStatusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6BE7AFD8EFBCC5C33379C16EA59332DE /* Pods_GitHubStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GitHubStatus.framework; path = "Pods-GitHubStatus.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1867C9A96DF2AA14B51DFA322E676A /* Pods-GitHubStatusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7304CAB61EBC7A4A3D755B60138A7E44 /* Pods-GitHubStatusTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GitHubStatusTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		741450D1AD5FF0E3A45A951F17A7312E /* Pods-GitHubStatusTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GitHubStatusTests.modulemap"; sourceTree = "<group>"; };
+		78E0DA9E7C9236A3094A765389BF6171 /* Pods-GitHubStatusUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatusUITests-frameworks.sh"; sourceTree = "<group>"; };
 		7D141D1953E5C6E67E362CE73090E48A /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		7EE4363090CDB88BB296A1F4AC61F33E /* Pods-GitHubStatusWidget-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatusWidget-resources.sh"; sourceTree = "<group>"; };
 		87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		8DC28B3B393F6A13A8379EBE3B7FD733 /* Pods-GitHubStatusTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GitHubStatusTests-umbrella.h"; sourceTree = "<group>"; };
-		90FE7A6F060A5D3308F1CEA8B2BD83FC /* Pods-GitHubStatusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B13FE5CBA94F435FA812540BCDACAFE /* Pods-GitHubStatus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GitHubStatus-umbrella.h"; sourceTree = "<group>"; };
+		92DA621C09428DE2ADAB47632D1B14C0 /* Pods_GitHubStatusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GitHubStatusUITests.framework; path = "Pods-GitHubStatusUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94424182C422F1F6D43C5025E89D84B3 /* Pods-GitHubStatusTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatusTests-frameworks.sh"; sourceTree = "<group>"; };
-		97642A6CF84C047A0FF296EA0258A34B /* Pods-GitHubStatusTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GitHubStatusTests.modulemap"; sourceTree = "<group>"; };
-		9E862D5728E3BB1A217662116ABCAEE3 /* Pods-GitHubStatusUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GitHubStatusUITests-dummy.m"; sourceTree = "<group>"; };
-		9FEACB51EA47F65346AFD75BAA06A9E2 /* Pods_GitHubStatusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GitHubStatusTests.framework; path = "Pods-GitHubStatusTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9923B88BC04F02241019F898F49A736D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A505FFE5A2B1462299FEEAA7C793766 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		A3605B9DDA4CA9FC15E0CF82FD56A1E7 /* Pods-GitHubStatusTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GitHubStatusTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A5A5C62A62A14E0DC54D533B809B158B /* Pods_GitHubStatusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GitHubStatusUITests.framework; path = "Pods-GitHubStatusUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A747A5DF89245161859DFEBFD50DBF8A /* Pods-GitHubStatusUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GitHubStatusUITests-umbrella.h"; sourceTree = "<group>"; };
-		AD33E67550F0025918AFA86EAF65ACB8 /* Pods-GitHubStatus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GitHubStatus.modulemap"; sourceTree = "<group>"; };
+		A45DE42ECF6E6A5BA97F6684FB55E93B /* Pods-GitHubStatusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatusTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF9D7F8D0D931F17B079DEE6F46BFD50 /* Pods-GitHubStatusWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatusWidget.release.xcconfig"; sourceTree = "<group>"; };
+		B00BD96086175B48BFCC6D9A6CEA5740 /* Pods-GitHubStatusUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GitHubStatusUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		B131DA7F34C1B64EECC27B7A6E407CAC /* Pods-GitHubStatusUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatusUITests-resources.sh"; sourceTree = "<group>"; };
 		B44A27EFBB0DA84D738057B77F3413B1 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		B5237369DCAF1EDBF88A34BDB29DF77E /* Pods-GitHubStatusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatusUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B9D6078D0D4ED0083E133C2F69DC8026 /* Pods-GitHubStatus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GitHubStatus-dummy.m"; sourceTree = "<group>"; };
-		B9E5A6B348FDB8182200F6531ACDBF14 /* Pods-GitHubStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatus.debug.xcconfig"; sourceTree = "<group>"; };
 		BCCA9CA7D9C1A2047BB93336C5708DFD /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		BD15715CFCF676CC5993963E006D8A8F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2DCEC2DB8F003E62EA14E84607052B8 /* Pods-GitHubStatusUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatusUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C053A1F68E456D32A44AA33C90849FF9 /* Pods-GitHubStatusUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GitHubStatusUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CA2DE1A8AB745709AF1BDCE963114D87 /* Pods-GitHubStatusWidget-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GitHubStatusWidget-acknowledgements.plist"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CDEC5C58346B1A7364ED169F58AF6FE7 /* Pods-GitHubStatusTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GitHubStatusTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D9D7A9970B1C778871FD9D8FA2CFCD5F /* Pods-GitHubStatusTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatusTests-resources.sh"; sourceTree = "<group>"; };
-		DB52ADE7E4370FEA18DBAF2B0C46D4D8 /* Pods-GitHubStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatus.release.xcconfig"; sourceTree = "<group>"; };
-		DB742319F5C4D78294821B4551E40FF1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD0725C4BA505C20FBBC7AAD240D5BF4 /* Pods-GitHubStatus-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatus-resources.sh"; sourceTree = "<group>"; };
+		D457C015BAFAC214C38D1B6717DE3EC0 /* Pods-GitHubStatus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GitHubStatus-dummy.m"; sourceTree = "<group>"; };
+		D55A08024C7A36D187DE9D8AC7EA6F23 /* Pods-GitHubStatusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubStatusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB08248658B3F49789E5E502BEEA264C /* Pods_GitHubStatusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GitHubStatusTests.framework; path = "Pods-GitHubStatusTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE626806861A5EE703EDD4749158DDE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		E574CEFEF51B37D0BBC1C37FF472BDC0 /* Pods-GitHubStatusTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubStatusTests-resources.sh"; sourceTree = "<group>"; };
+		E59E18FDC2231BAF16801A9A2CDD7339 /* Pods_GitHubStatusWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GitHubStatusWidget.framework; path = "Pods-GitHubStatusWidget.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		F23078530BF21AA90C9DB73724D11B1B /* Pods-GitHubStatusTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GitHubStatusTests-dummy.m"; sourceTree = "<group>"; };
+		FB281A7051173F12A6CAD9E681A54212 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,43 +163,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA911D2F3508534952B96B1C85FA10FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02BB77470ECF719A123EE78539828C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C7FB24D690AB793552F9976F7B00C35 /* Pods-GitHubStatus */ = {
+		11AB89FBF42649841CE7F6D035655147 /* Pods-GitHubStatusWidget */ = {
 			isa = PBXGroup;
 			children = (
-				1AD4136156C0CE67293778A7016FFD5A /* Info.plist */,
-				AD33E67550F0025918AFA86EAF65ACB8 /* Pods-GitHubStatus.modulemap */,
-				0C6787480066C57AF6CF444B63438F14 /* Pods-GitHubStatus-acknowledgements.markdown */,
-				19B7D21C54B3BF4195769AA5E6BFBB7C /* Pods-GitHubStatus-acknowledgements.plist */,
-				B9D6078D0D4ED0083E133C2F69DC8026 /* Pods-GitHubStatus-dummy.m */,
-				163FBC3E6B5E057A36663646578F97BE /* Pods-GitHubStatus-frameworks.sh */,
-				DD0725C4BA505C20FBBC7AAD240D5BF4 /* Pods-GitHubStatus-resources.sh */,
-				70131D06C31E96FDDB47ED75EAB9694F /* Pods-GitHubStatus-umbrella.h */,
-				B9E5A6B348FDB8182200F6531ACDBF14 /* Pods-GitHubStatus.debug.xcconfig */,
-				DB52ADE7E4370FEA18DBAF2B0C46D4D8 /* Pods-GitHubStatus.release.xcconfig */,
+				20DB7D1A89B2C9DCFD243330C593ED1D /* Info.plist */,
+				36D960B1B649D0BC5AF30CA82547F05D /* Pods-GitHubStatusWidget.modulemap */,
+				0EF99E38209E2CAB2444AE71D5B959B7 /* Pods-GitHubStatusWidget-acknowledgements.markdown */,
+				CA2DE1A8AB745709AF1BDCE963114D87 /* Pods-GitHubStatusWidget-acknowledgements.plist */,
+				3733BC521EDC2575A085F4BB62CE14CB /* Pods-GitHubStatusWidget-dummy.m */,
+				7EE4363090CDB88BB296A1F4AC61F33E /* Pods-GitHubStatusWidget-resources.sh */,
+				36BFDC053466314883ED0DD402FF4B39 /* Pods-GitHubStatusWidget-umbrella.h */,
+				2829FEFA20E2E813E7226215EF82FE8A /* Pods-GitHubStatusWidget.debug.xcconfig */,
+				AF9D7F8D0D931F17B079DEE6F46BFD50 /* Pods-GitHubStatusWidget.release.xcconfig */,
 			);
-			name = "Pods-GitHubStatus";
-			path = "Target Support Files/Pods-GitHubStatus";
-			sourceTree = "<group>";
-		};
-		1A1AAEDB90F62AB8771C57BB1A95A2DA /* Pods-GitHubStatusTests */ = {
-			isa = PBXGroup;
-			children = (
-				59D19E28657381F871A27A8056AA3DE4 /* Info.plist */,
-				97642A6CF84C047A0FF296EA0258A34B /* Pods-GitHubStatusTests.modulemap */,
-				CDEC5C58346B1A7364ED169F58AF6FE7 /* Pods-GitHubStatusTests-acknowledgements.markdown */,
-				A3605B9DDA4CA9FC15E0CF82FD56A1E7 /* Pods-GitHubStatusTests-acknowledgements.plist */,
-				5B366DFD5E371AD056042DB35EBE0B16 /* Pods-GitHubStatusTests-dummy.m */,
-				94424182C422F1F6D43C5025E89D84B3 /* Pods-GitHubStatusTests-frameworks.sh */,
-				D9D7A9970B1C778871FD9D8FA2CFCD5F /* Pods-GitHubStatusTests-resources.sh */,
-				8DC28B3B393F6A13A8379EBE3B7FD733 /* Pods-GitHubStatusTests-umbrella.h */,
-				90FE7A6F060A5D3308F1CEA8B2BD83FC /* Pods-GitHubStatusTests.debug.xcconfig */,
-				4E94779B811C8BA6171321A5DC6AAB92 /* Pods-GitHubStatusTests.release.xcconfig */,
-			);
-			name = "Pods-GitHubStatusTests";
-			path = "Target Support Files/Pods-GitHubStatusTests";
+			name = "Pods-GitHubStatusWidget";
+			path = "Target Support Files/Pods-GitHubStatusWidget";
 			sourceTree = "<group>";
 		};
 		200D10EB20F0397D47F022B50CF0433F /* Alamofire */ = {
@@ -208,24 +217,6 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		26BB557A47953851FCB00A3D6897F662 /* Pods-GitHubStatusUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DB742319F5C4D78294821B4551E40FF1 /* Info.plist */,
-				7BB1E19D00DB61EEA2E4443489DE0A58 /* Pods-GitHubStatusUITests.modulemap */,
-				2F0AF30650EF89E8C7C6DFE8DCD2FE54 /* Pods-GitHubStatusUITests-acknowledgements.markdown */,
-				3BE91CC6AA40522CC4C0D711108940F7 /* Pods-GitHubStatusUITests-acknowledgements.plist */,
-				9E862D5728E3BB1A217662116ABCAEE3 /* Pods-GitHubStatusUITests-dummy.m */,
-				C2DCEC2DB8F003E62EA14E84607052B8 /* Pods-GitHubStatusUITests-frameworks.sh */,
-				B131DA7F34C1B64EECC27B7A6E407CAC /* Pods-GitHubStatusUITests-resources.sh */,
-				A747A5DF89245161859DFEBFD50DBF8A /* Pods-GitHubStatusUITests-umbrella.h */,
-				B5237369DCAF1EDBF88A34BDB29DF77E /* Pods-GitHubStatusUITests.debug.xcconfig */,
-				2A820C046542874A8E18C9588679C893 /* Pods-GitHubStatusUITests.release.xcconfig */,
-			);
-			name = "Pods-GitHubStatusUITests";
-			path = "Target Support Files/Pods-GitHubStatusUITests";
-			sourceTree = "<group>";
-		};
 		35F128EB69B6F7FB7DA93BBF6C130FAE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,14 +225,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4DEC88E6F3B719C44BED93057E35A5DB /* Targets Support Files */ = {
+		36C0833923E2331736C05561D0593126 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C7FB24D690AB793552F9976F7B00C35 /* Pods-GitHubStatus */,
-				1A1AAEDB90F62AB8771C57BB1A95A2DA /* Pods-GitHubStatusTests */,
-				26BB557A47953851FCB00A3D6897F662 /* Pods-GitHubStatusUITests */,
+				9923B88BC04F02241019F898F49A736D /* Alamofire.framework */,
+				6BE7AFD8EFBCC5C33379C16EA59332DE /* Pods_GitHubStatus.framework */,
+				DB08248658B3F49789E5E502BEEA264C /* Pods_GitHubStatusTests.framework */,
+				92DA621C09428DE2ADAB47632D1B14C0 /* Pods_GitHubStatusUITests.framework */,
+				E59E18FDC2231BAF16801A9A2CDD7339 /* Pods_GitHubStatusWidget.framework */,
 			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		55F14F994FE7AB51F028BFE66CEF3106 /* Support Files */ = {
@@ -258,6 +251,24 @@
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
+		65543B7A6C2FA6F0CB7E552C7535DCAB /* Pods-GitHubStatusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A505FFE5A2B1462299FEEAA7C793766 /* Info.plist */,
+				4048332132AFB00EB981B2C6A19EAAAA /* Pods-GitHubStatusUITests.modulemap */,
+				C053A1F68E456D32A44AA33C90849FF9 /* Pods-GitHubStatusUITests-acknowledgements.markdown */,
+				B00BD96086175B48BFCC6D9A6CEA5740 /* Pods-GitHubStatusUITests-acknowledgements.plist */,
+				267972B6A32DE20C8D9163EE865CCD3C /* Pods-GitHubStatusUITests-dummy.m */,
+				78E0DA9E7C9236A3094A765389BF6171 /* Pods-GitHubStatusUITests-frameworks.sh */,
+				024002410EC9564FC225E528F6BE63F7 /* Pods-GitHubStatusUITests-resources.sh */,
+				69AD3ED3BBAA5F30F80BFFDA881AB082 /* Pods-GitHubStatusUITests-umbrella.h */,
+				6E1867C9A96DF2AA14B51DFA322E676A /* Pods-GitHubStatusUITests.debug.xcconfig */,
+				6AE808007BCC0CC3A500B877D3769825 /* Pods-GitHubStatusUITests.release.xcconfig */,
+			);
+			name = "Pods-GitHubStatusUITests";
+			path = "Target Support Files/Pods-GitHubStatusUITests";
+			sourceTree = "<group>";
+		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,15 +277,62 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		767D1F4197DBD50CD75ABBE7E2578578 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7839B3220E4D8D979EEA726770AEA43A /* Pods-GitHubStatus */,
+				92688D8E7252C2F234F3C364AEB78364 /* Pods-GitHubStatusTests */,
+				65543B7A6C2FA6F0CB7E552C7535DCAB /* Pods-GitHubStatusUITests */,
+				11AB89FBF42649841CE7F6D035655147 /* Pods-GitHubStatusWidget */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7839B3220E4D8D979EEA726770AEA43A /* Pods-GitHubStatus */ = {
+			isa = PBXGroup;
+			children = (
+				FB281A7051173F12A6CAD9E681A54212 /* Info.plist */,
+				3CD0093CBE502FE89C18EC20CD3FD222 /* Pods-GitHubStatus.modulemap */,
+				36D054DD35023B07641F5AB5F763D5F3 /* Pods-GitHubStatus-acknowledgements.markdown */,
+				26D6B78A82E92F76688CA9CDE9C19D28 /* Pods-GitHubStatus-acknowledgements.plist */,
+				D457C015BAFAC214C38D1B6717DE3EC0 /* Pods-GitHubStatus-dummy.m */,
+				5920BE3E834BE27D71FD4F41A18B6282 /* Pods-GitHubStatus-frameworks.sh */,
+				0DF76D894E4B7427CF2844CFB2305072 /* Pods-GitHubStatus-resources.sh */,
+				8B13FE5CBA94F435FA812540BCDACAFE /* Pods-GitHubStatus-umbrella.h */,
+				08FD1B4E3E5654975991279A78CC575F /* Pods-GitHubStatus.debug.xcconfig */,
+				4DCDC868E003FC629D22ACE74DAD4A72 /* Pods-GitHubStatus.release.xcconfig */,
+			);
+			name = "Pods-GitHubStatus";
+			path = "Target Support Files/Pods-GitHubStatus";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				35F128EB69B6F7FB7DA93BBF6C130FAE /* Pods */,
-				FBB2349B2B53A4FC16FE5A35653D8EEE /* Products */,
-				4DEC88E6F3B719C44BED93057E35A5DB /* Targets Support Files */,
+				36C0833923E2331736C05561D0593126 /* Products */,
+				767D1F4197DBD50CD75ABBE7E2578578 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		92688D8E7252C2F234F3C364AEB78364 /* Pods-GitHubStatusTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE626806861A5EE703EDD4749158DDE0 /* Info.plist */,
+				741450D1AD5FF0E3A45A951F17A7312E /* Pods-GitHubStatusTests.modulemap */,
+				4836D10DFA7ADE7F0164F0D9A062BCEC /* Pods-GitHubStatusTests-acknowledgements.markdown */,
+				7304CAB61EBC7A4A3D755B60138A7E44 /* Pods-GitHubStatusTests-acknowledgements.plist */,
+				F23078530BF21AA90C9DB73724D11B1B /* Pods-GitHubStatusTests-dummy.m */,
+				0BA412E6B1CC98A82CBC850C6968F60C /* Pods-GitHubStatusTests-frameworks.sh */,
+				E574CEFEF51B37D0BBC1C37FF472BDC0 /* Pods-GitHubStatusTests-resources.sh */,
+				5AF62FA376EFD6A575AAE2E8C0E2429E /* Pods-GitHubStatusTests-umbrella.h */,
+				D55A08024C7A36D187DE9D8AC7EA6F23 /* Pods-GitHubStatusTests.debug.xcconfig */,
+				A45DE42ECF6E6A5BA97F6684FB55E93B /* Pods-GitHubStatusTests.release.xcconfig */,
+			);
+			name = "Pods-GitHubStatusTests";
+			path = "Target Support Files/Pods-GitHubStatusTests";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -283,17 +341,6 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FBB2349B2B53A4FC16FE5A35653D8EEE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BD15715CFCF676CC5993963E006D8A8F /* Alamofire.framework */,
-				1FE71072EF425EC26A388D97798E4C8C /* Pods_GitHubStatus.framework */,
-				9FEACB51EA47F65346AFD75BAA06A9E2 /* Pods_GitHubStatusTests.framework */,
-				A5A5C62A62A14E0DC54D533B809B158B /* Pods_GitHubStatusUITests.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,9 +378,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC29FDC3686DE749C9DD9D3B65703B77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A04F04F25E5007BFC74C5A7DDE65D1B /* Pods-GitHubStatusWidget-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0AC7DDAA3DF5ED6D74AF1B6827EC0B12 /* Pods-GitHubStatusWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB04431A22C3827059EC1BE05342063B /* Build configuration list for PBXNativeTarget "Pods-GitHubStatusWidget" */;
+			buildPhases = (
+				02A0A28220AD30AD09EC356B6DD1F324 /* Sources */,
+				FA911D2F3508534952B96B1C85FA10FA /* Frameworks */,
+				FC29FDC3686DE749C9DD9D3B65703B77 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71E3AA7DDD3E0937294ECB84A19F4BDD /* PBXTargetDependency */,
+			);
+			name = "Pods-GitHubStatusWidget";
+			productName = "Pods-GitHubStatusWidget";
+			productReference = E59E18FDC2231BAF16801A9A2CDD7339 /* Pods_GitHubStatusWidget.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1C23B5D27BD42EED635510A08281EC3B /* Pods-GitHubStatusUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EB2544F4293094DF2A00DA22330B46D /* Build configuration list for PBXNativeTarget "Pods-GitHubStatusUITests" */;
@@ -348,7 +421,7 @@
 			);
 			name = "Pods-GitHubStatusUITests";
 			productName = "Pods-GitHubStatusUITests";
-			productReference = A5A5C62A62A14E0DC54D533B809B158B /* Pods_GitHubStatusUITests.framework */;
+			productReference = 92DA621C09428DE2ADAB47632D1B14C0 /* Pods_GitHubStatusUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		1F53FA109FBB0D2F853612795E0864F8 /* Pods-GitHubStatusTests */ = {
@@ -365,7 +438,7 @@
 			);
 			name = "Pods-GitHubStatusTests";
 			productName = "Pods-GitHubStatusTests";
-			productReference = 9FEACB51EA47F65346AFD75BAA06A9E2 /* Pods_GitHubStatusTests.framework */;
+			productReference = DB08248658B3F49789E5E502BEEA264C /* Pods_GitHubStatusTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -382,7 +455,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = BD15715CFCF676CC5993963E006D8A8F /* Alamofire.framework */;
+			productReference = 9923B88BC04F02241019F898F49A736D /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F714A730E2B9D5CBD59839272F980B30 /* Pods-GitHubStatus */ = {
@@ -400,7 +473,7 @@
 			);
 			name = "Pods-GitHubStatus";
 			productName = "Pods-GitHubStatus";
-			productReference = 1FE71072EF425EC26A388D97798E4C8C /* Pods_GitHubStatus.framework */;
+			productReference = 6BE7AFD8EFBCC5C33379C16EA59332DE /* Pods_GitHubStatus.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -420,7 +493,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FBB2349B2B53A4FC16FE5A35653D8EEE /* Products */;
+			productRefGroup = 36C0833923E2331736C05561D0593126 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -428,11 +501,20 @@
 				F714A730E2B9D5CBD59839272F980B30 /* Pods-GitHubStatus */,
 				1F53FA109FBB0D2F853612795E0864F8 /* Pods-GitHubStatusTests */,
 				1C23B5D27BD42EED635510A08281EC3B /* Pods-GitHubStatusUITests */,
+				0AC7DDAA3DF5ED6D74AF1B6827EC0B12 /* Pods-GitHubStatusWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		02A0A28220AD30AD09EC356B6DD1F324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4BE0C31953AB6475042870505A397AD /* Pods-GitHubStatusWidget-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32B9974868188C4803318E36329C87FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -485,6 +567,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		71E3AA7DDD3E0937294ECB84A19F4BDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = E1E9FF8AF4304400E6DF406341D61424 /* PBXContainerItemProxy */;
+		};
 		DC761139D75AA75B2196D5296035E111 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
@@ -494,10 +582,48 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A29B6F510198AF64EFD762EF6FA97A5 /* Release */ = {
+		0464663ED6D40D727021C0FFF549E858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2829FEFA20E2E813E7226215EF82FE8A /* Pods-GitHubStatusWidget.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GitHubStatusWidget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GitHubStatusWidget/Pods-GitHubStatusWidget.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GitHubStatusWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2E28EFEF14ADC69FFD24FE1ABF29B61B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -528,7 +654,7 @@
 		};
 		4C25C91BAECCB7B859386E0DF818F7C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9E5A6B348FDB8182200F6531ACDBF14 /* Pods-GitHubStatus.debug.xcconfig */;
+			baseConfigurationReference = 08FD1B4E3E5654975991279A78CC575F /* Pods-GitHubStatus.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -604,7 +730,7 @@
 		};
 		923234A41F262875F8DDC99DA1A810D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5237369DCAF1EDBF88A34BDB29DF77E /* Pods-GitHubStatusUITests.debug.xcconfig */;
+			baseConfigurationReference = 6E1867C9A96DF2AA14B51DFA322E676A /* Pods-GitHubStatusUITests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -639,7 +765,7 @@
 		};
 		B92B22F959BF69C89FF20C8F4065A539 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB52ADE7E4370FEA18DBAF2B0C46D4D8 /* Pods-GitHubStatus.release.xcconfig */;
+			baseConfigurationReference = 4DCDC868E003FC629D22ACE74DAD4A72 /* Pods-GitHubStatus.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -674,7 +800,7 @@
 		};
 		BBC86897D8364AFAA4272D954DD4AD7F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90FE7A6F060A5D3308F1CEA8B2BD83FC /* Pods-GitHubStatusTests.debug.xcconfig */;
+			baseConfigurationReference = D55A08024C7A36D187DE9D8AC7EA6F23 /* Pods-GitHubStatusTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -709,7 +835,7 @@
 		};
 		C9E1028B69BA32C56132BBAE583E187F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E94779B811C8BA6171321A5DC6AAB92 /* Pods-GitHubStatusTests.release.xcconfig */;
+			baseConfigurationReference = A45DE42ECF6E6A5BA97F6684FB55E93B /* Pods-GitHubStatusTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -742,9 +868,43 @@
 			};
 			name = Release;
 		};
+		CA5D62C15C81F2ED9722A44DFB0C1BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		DFBF043AFE0AF059E16DEA0833FB1450 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A820C046542874A8E18C9588679C893 /* Pods-GitHubStatusUITests.release.xcconfig */;
+			baseConfigurationReference = 6AE808007BCC0CC3A500B877D3769825 /* Pods-GitHubStatusUITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -769,6 +929,42 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_GitHubStatusUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E3EE1AD1739185B487FC9456E6A35807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF9D7F8D0D931F17B079DEE6F46BFD50 /* Pods-GitHubStatusWidget.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GitHubStatusWidget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GitHubStatusWidget/Pods-GitHubStatusWidget.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GitHubStatusWidget;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -821,39 +1017,6 @@
 			};
 			name = Debug;
 		};
-		F383079BFBF927813EA3613CFB679FDE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -878,8 +1041,8 @@
 		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F383079BFBF927813EA3613CFB679FDE /* Debug */,
-				0A29B6F510198AF64EFD762EF6FA97A5 /* Release */,
+				CA5D62C15C81F2ED9722A44DFB0C1BB7 /* Debug */,
+				2E28EFEF14ADC69FFD24FE1ABF29B61B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -898,6 +1061,15 @@
 			buildConfigurations = (
 				4C25C91BAECCB7B859386E0DF818F7C6 /* Debug */,
 				B92B22F959BF69C89FF20C8F4065A539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB04431A22C3827059EC1BE05342063B /* Build configuration list for PBXNativeTarget "Pods-GitHubStatusWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0464663ED6D40D727021C0FFF549E858 /* Debug */,
+				E3EE1AD1739185B487FC9456E6A35807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

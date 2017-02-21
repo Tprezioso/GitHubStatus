@@ -8,7 +8,7 @@
 
 import UIKit
 import NotificationCenter
-
+import Alamofire
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet var wigetLabel: UILabel!
@@ -35,13 +35,24 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func updateLabel() {
-        let defaults = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
-        let status = defaults!.string(forKey: "status")
-        statusForSharing = status!
-        let lastUpdate = defaults!.string(forKey: "lastUpdate")
-        self.wigetLabel.text = " \(lastUpdate!)\n Status: \(status!)"
-        print(self.wigetLabel.text!)
-        print("\(status!)")
+        Alamofire.request("https://status.github.com/api/status.json").responseJSON { response in
+            if let JSON = response.result.value {
+                let data = JSON as? [String: Any]
+                let status = data?["status"] as! String?
+                self.wigetLabel.text = " Status: \(status!)"
+            }
+        }
+
+        
+        
+        
+//        let defaults = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
+//        let status = defaults!.string(forKey: "status")
+//        statusForSharing = status!
+//        let lastUpdate = defaults!.string(forKey: "lastUpdate")
+//        self.wigetLabel.text = " \(lastUpdate!)\n Status: \(status!)"
+//        print(self.wigetLabel.text!)
+//        print("\(status!)")
     }
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
