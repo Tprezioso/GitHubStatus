@@ -69,6 +69,16 @@
                                     <constraint firstAttribute="width" constant="343" id="sNV-iZ-Tw8"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mv-YC-c6z">
+                                <rect key="frame" x="16" y="350" width="343" height="259"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="259" id="Gtv-rM-XKv"/>
+                                    <constraint firstAttribute="width" constant="343" id="hTg-RM-fQl"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="openURLButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iUS-53-E8O"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -82,11 +92,14 @@
                             <constraint firstItem="0bF-Ze-WCL" firstAttribute="top" secondItem="lZ2-0E-DxP" secondAttribute="bottom" constant="8" id="Hu9-xj-Or5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7Zg-3S-Pa2" secondAttribute="trailing" id="I0d-Q9-jUV"/>
                             <constraint firstAttribute="leadingMargin" secondItem="0bF-Ze-WCL" secondAttribute="leading" id="Lvm-xi-j6M"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="2mv-YC-c6z" secondAttribute="leading" id="NVd-UM-HnC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bHf-wH-T6K" secondAttribute="trailing" id="WaI-bx-1FK"/>
+                            <constraint firstItem="2mv-YC-c6z" firstAttribute="top" secondItem="lZ2-0E-DxP" secondAttribute="bottom" constant="8" id="WfI-0P-2ag"/>
                             <constraint firstAttribute="leadingMargin" secondItem="lZ2-0E-DxP" secondAttribute="leading" id="aNV-oz-egV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0bF-Ze-WCL" secondAttribute="trailing" id="dSC-8U-rCx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lZ2-0E-DxP" secondAttribute="trailing" id="ePT-eP-QXp"/>
                             <constraint firstAttribute="leadingMargin" secondItem="bHf-wH-T6K" secondAttribute="leading" id="mxk-ys-S2f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2mv-YC-c6z" secondAttribute="trailing" id="n4F-3C-5Qa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="k0O-K0-xfe" secondAttribute="trailing" id="nrD-lf-B06"/>
                             <constraint firstItem="k0O-K0-xfe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="tZF-3G-QFu"/>
                         </constraints>
@@ -96,6 +109,7 @@
                         <outlet property="bodyLabel" destination="0bF-Ze-WCL" id="TBh-Wh-ene"/>
                         <outlet property="lastUpdatedLabel" destination="k0O-K0-xfe" id="aNu-AY-yer"/>
                         <outlet property="octocatImage" destination="bHf-wH-T6K" id="50X-jy-eFW"/>
+                        <outlet property="poweredByLabel" destination="7Zg-3S-Pa2" id="fnz-5G-EIm"/>
                         <outlet property="statusLabel" destination="lZ2-0E-DxP" id="moQ-WP-NRf"/>
                     </connections>
                 </viewController>
