@@ -56,17 +56,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 self.wigetLabel.text = " Status: \(status!.capitalizingFirstLetter())\n\n \(convertedDate)"
             }
         }
-
-        
-        
-        
-//        let defaults = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
-//        let status = defaults!.string(forKey: "status")
-//        statusForSharing = status!
-//        let lastUpdate = defaults!.string(forKey: "lastUpdate")
-//        self.wigetLabel.text = " \(lastUpdate!)\n Status: \(status!)"
-//        print(self.wigetLabel.text!)
-//        print("\(status!)")
     }
 
     func takeStringFromBeging(stringToCut:String ,start: Int, end: Int) -> String {
