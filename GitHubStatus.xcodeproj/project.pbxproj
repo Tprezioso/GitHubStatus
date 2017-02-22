@@ -191,7 +191,6 @@
 				9FBF40F71E55E349008688B0 /* AppDelegate.swift */,
 				9FCC487E1E57A72400B5594C /* ViewController */,
 				9FCC487F1E57A73600B5594C /* View */,
-				9FBF41011E55E349008688B0 /* Assets.xcassets */,
 				9FBF41061E55E349008688B0 /* Info.plist */,
 				9FBF40FE1E55E349008688B0 /* GitHubStatus.xcdatamodeld */,
 				9FCC487D1E57A71C00B5594C /* Images */,
@@ -231,6 +230,7 @@
 		9FCC487D1E57A71C00B5594C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9FBF41011E55E349008688B0 /* Assets.xcassets */,
 				9FE2727F1E560916001453AF /* Octicons-mark-github.svg.png */,
 				9FE272811E5637C8001453AF /* Octocat.png */,
 			);
@@ -1012,6 +1012,7 @@
 				9FCC48751E5762AF00B5594C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
