@@ -10,6 +10,18 @@ import UIKit
 import NotificationCenter
 import Alamofire
 
+extension String {
+    func capitalizingFirstLetter() -> String {
+        let first = String(characters.prefix(1)).capitalized
+        let other = String(characters.dropFirst())
+        return first + other
+    }
+    
+    mutating func capitalizeFirstLetter() {
+        self = self.capitalizingFirstLetter()
+    }
+}
+
 class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet var wigetLabel: UILabel!
     @IBOutlet var statusLabel: UILabel!
@@ -39,7 +51,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             if let JSON = response.result.value {
                 let data = JSON as? [String: Any]
                 let status = data?["status"] as! String?
-                self.wigetLabel.text = " Status: \(status!)"
+                let date = data?["last_updated"] as! String?
+                let convertedDate = self.getDateFromJSONData(dateString: date!)
+                self.wigetLabel.text = " Status: \(status!.capitalizingFirstLetter())\n\n \(convertedDate)"
             }
         }
 
@@ -54,6 +68,22 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 //        print(self.wigetLabel.text!)
 //        print("\(status!)")
     }
+
+    func takeStringFromBeging(stringToCut:String ,start: Int, end: Int) -> String {
+        let startIndex = stringToCut.index(stringToCut.startIndex, offsetBy: start)
+        let endIndex = stringToCut.index(stringToCut.startIndex, offsetBy: end)
+        
+        return stringToCut[startIndex...endIndex]
+    }
+    
+    func getDateFromJSONData(dateString: String) -> String {
+        let day = takeStringFromBeging(stringToCut: dateString, start: 8, end: 9)
+        let month = takeStringFromBeging(stringToCut: dateString, start: 5, end: 6)
+        let year = takeStringFromBeging(stringToCut: dateString, start: 0, end: 3)
+        
+        return "Last Updated\n\(month)/\(day)/\(year)"
+    }
+
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.

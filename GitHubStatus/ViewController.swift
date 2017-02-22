@@ -9,6 +9,18 @@
 import UIKit
 import Alamofire
 
+extension String {
+    func capitalizingFirstLetter() -> String {
+        let first = String(characters.prefix(1)).capitalized
+        let other = String(characters.dropFirst())
+        return first + other
+    }
+    
+    mutating func capitalizeFirstLetter() {
+        self = self.capitalizingFirstLetter()
+    }
+}
+
 class ViewController: UIViewController {
     @IBOutlet var statusLabel: UILabel!
     @IBOutlet var lastUpdatedLabel: UILabel!
@@ -73,7 +85,7 @@ class ViewController: UIViewController {
             if let JSON = response.result.value {
                 let data = JSON as? [String: Any]
                 let status = data?["status"] as! String?
-                self.statusLabel.text = " Status: \(status!)"
+                self.statusLabel.text = " Status: \(status!.capitalizingFirstLetter())"
                 let date = data?["last_updated"] as! String?
                 self.setBackGroundColorForStatus(status: status!)
                 self.lastUpdatedLabel.text = self.getDateFromJSONData(dateString: date!)
