@@ -30,7 +30,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLabel()
-        setBackGroundColorForStatus(status: statusForSharing)
     }
     
     func setBackGroundColorForStatus(status:String) {
@@ -53,6 +52,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 let status = data?["status"] as! String?
                 let date = data?["last_updated"] as! String?
                 let convertedDate = self.getDateFromJSONData(dateString: date!)
+                self.setBackGroundColorForStatus(status: status!)
                 self.wigetLabel.text = " Status: \(status!.capitalizingFirstLetter())\n\n \(convertedDate)"
             }
         }
