@@ -90,7 +90,6 @@ class ViewController: UIViewController {
     
     func api() {
         Alamofire.request("https://status.github.com/api/status.json").responseJSON { response in
-
             let hud = BXHUD.showProgress("Loading")
             self.view.addSubview(hud)
             if let JSON = response.result.value {
