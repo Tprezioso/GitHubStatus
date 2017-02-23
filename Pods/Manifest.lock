@@ -1,12 +1,21 @@
 PODS:
   - Alamofire (4.3.0)
+  - BXProgressHUD (2.0):
+    - PinAuto (~> 2.0)
+  - MBProgressHUD (1.0.0)
+  - PinAuto (2.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3)
+  - BXProgressHUD (~> 2.0)
+  - MBProgressHUD (~> 1.0)
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  BXProgressHUD: b206b6e09e90c49eb390a68cc6d427bddaf80e87
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  PinAuto: cc406f453a35292a9f892d7f94f5cc71e5e99762
 
-PODFILE CHECKSUM: 39296e73d9e794f52d41ac3ff1039f536f5ea4d5
+PODFILE CHECKSUM: fda54d3f32f109ba2141c1f5bee83702bf56df9d
 
 COCOAPODS: 1.2.0

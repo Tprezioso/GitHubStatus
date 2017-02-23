@@ -78,6 +78,8 @@
 		9474EA209C54A8636522C881 /* Pods-GitHubStatusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStatusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubStatusUITests/Pods-GitHubStatusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9706AC9D5B8E3109C01BDF94 /* Pods-GitHubStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStatus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubStatus/Pods-GitHubStatus.debug.xcconfig"; sourceTree = "<group>"; };
 		9CD8A56DA99D970FD4DBD45C /* Pods-GitHubStatusWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubStatusWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubStatusWidget/Pods-GitHubStatusWidget.release.xcconfig"; sourceTree = "<group>"; };
+		9F0315DF1E5F846500508E1C /* BXProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BXProgressHUD.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GitHubStatus-eqfukfzpbbvplogobhdbscvsrdti/Build/Products/Debug-iphonesimulator/BXProgressHUD/BXProgressHUD.framework"; sourceTree = "<group>"; };
+		9F0315E11E5F848E00508E1C /* PinAuto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PinAuto.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GitHubStatus-eqfukfzpbbvplogobhdbscvsrdti/Build/Products/Debug-iphonesimulator/PinAuto/PinAuto.framework"; sourceTree = "<group>"; };
 		9F23C5771E55E6F4003499D6 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Pods/../build/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
 		9FBF40F41E55E349008688B0 /* GitHubStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBF40F71E55E349008688B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -289,6 +291,8 @@
 		CFD9B345C614F0F678826C2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F0315E11E5F848E00508E1C /* PinAuto.framework */,
+				9F0315DF1E5F846500508E1C /* BXProgressHUD.framework */,
 				9FC4F58E1E55E85A00AA5A05 /* Alamofire.framework */,
 				9F23C5771E55E6F4003499D6 /* AFNetworking.framework */,
 				84177B7A59CD838DEAE93C93 /* Pods_GitHubStatus.framework */,

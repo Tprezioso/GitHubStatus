@@ -10,6 +10,7 @@ import UIKit
 import NotificationCenter
 import Alamofire
 
+
 extension String {
     func capitalizingFirstLetter() -> String {
         let first = String(characters.prefix(1)).capitalized
@@ -47,6 +48,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func updateLabel() {
         Alamofire.request("https://status.github.com/api/status.json").responseJSON { response in
+            
             if let JSON = response.result.value {
                 let data = JSON as? [String: Any]
                 let status = data?["status"] as! String?

@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import BXProgressHUD
 
 extension String {
     func capitalizingFirstLetter() -> String {
@@ -89,6 +90,9 @@ class ViewController: UIViewController {
     
     func api() {
         Alamofire.request("https://status.github.com/api/status.json").responseJSON { response in
+
+            let hud = BXHUD.showProgress("Loading")
+            self.view.addSubview(hud)
             if let JSON = response.result.value {
                 let data = JSON as? [String: Any]
                 let status = data?["status"] as! String?
@@ -100,6 +104,7 @@ class ViewController: UIViewController {
                 extenstionDefault?.set(status!, forKey: "status")
                 extenstionDefault?.set(self.lastUpdatedLabel.text, forKey: "lastUpdate")
                 extenstionDefault?.synchronize()
+                hud.hide(afterDelay: 0.5)
             }
         }
     }

@@ -9,6 +9,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BXProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PinAuto.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-GitHubStatus.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +62,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>41FA54D12162DAD51D02FC58A2CD5034</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>696954556548C1CFCAC7DD714AFAED45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F714A730E2B9D5CBD59839272F980B30</key>
+		<key>B9959C22EFBBEB1AED1F8420A051CCB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C94454E22EDBDB09E12AA7F4E37B0E85</key>
 		<dict>
 			<key>primary</key>
 			<true/>
