@@ -33,6 +33,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         updateLabel()
     }
     
+    // MARK: - Setup Label
     func setBackGroundColorForStatus(status:String) {
         switch status {
         case "good":
@@ -46,6 +47,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }
     }
     
+    // MARK: - API Call
     func updateLabel() {
         Alamofire.request("https://status.github.com/api/status.json").responseJSON { response in
             if let JSON = response.result.value {
@@ -59,6 +61,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }
     }
 
+    // MARK: - Helper Methods
     func takeStringFromBeging(stringToCut:String ,start: Int, end: Int) -> String {
         let startIndex = stringToCut.index(stringToCut.startIndex, offsetBy: start)
         let endIndex = stringToCut.index(stringToCut.startIndex, offsetBy: end)
