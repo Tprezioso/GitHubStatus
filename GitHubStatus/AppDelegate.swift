@@ -44,6 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
+   
     func registerForRemoteNotification() {
         if #available(iOS 10.0, *) {
             let center  = UNUserNotificationCenter.current()
@@ -59,6 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             UIApplication.shared.registerForRemoteNotifications()
         }
     }
+   
     // MARK: - Called when a notification is delivered to a foreground app.
     @available(iOS 10.0, *)
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
