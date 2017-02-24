@@ -29,11 +29,12 @@ class ViewController: UIViewController {
     @IBOutlet var octocatImage: UIImageView!
     @IBOutlet var poweredByLabel: UILabel!
    
-    @IBAction func openURLButton(_ sender: Any) {
-        let url = URL(string: "https://status.github.com/")
-        UIApplication.shared.open(url!)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        startTheApp()
     }
 
+    // MARK: - Setup View
     func setupViews() {
         let navImage : UIImage = UIImage(named: "Octicons-mark-github.svg.png")!
         let navImageView = UIImageView(frame: CGRect(x:0, y: 0, width: 40, height: 40))
@@ -51,7 +52,7 @@ class ViewController: UIViewController {
         backgroundImageView.contentMode = .scaleAspectFit
         backgroundImageView.image = backgroundImage
         self.view.insertSubview(backgroundImageView, at: 0)
- 
+        
         let octImage : UIImage = UIImage(named: "Octocat.png")!
         octocatImage.contentMode = .scaleAspectFit
         octocatImage.image = octImage
@@ -73,6 +74,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Helper Method(s)
     func takeStringFromBeging(stringToCut:String ,start: Int, end: Int) -> String {
         let startIndex = stringToCut.index(stringToCut.startIndex, offsetBy: start)
         let endIndex = stringToCut.index(stringToCut.startIndex, offsetBy: end)
@@ -84,10 +86,11 @@ class ViewController: UIViewController {
         let day = takeStringFromBeging(stringToCut: dateString, start: 8, end: 9)
         let month = takeStringFromBeging(stringToCut: dateString, start: 5, end: 6)
         let year = takeStringFromBeging(stringToCut: dateString, start: 0, end: 3)
-
+        
         return "Last Updated\n\(month)/\(day)/\(year)"
     }
     
+    // MARK: - API Call
     func api() {
         Alamofire.request("https://status.github.com/api/status.json").responseJSON { response in
             let hud = BXHUD.showProgress("Loading")
@@ -107,14 +110,17 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
+    // MARK: - Method Called On viewDidLoad Method
     func startTheApp() {
         setupViews()
         api()
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        startTheApp()
+
+    // MARK: - Action Method(s)
+    @IBAction func openURLButton(_ sender: Any) {
+        let url = URL(string: "https://status.github.com/")
+        UIApplication.shared.open(url!)
     }
 }
 
