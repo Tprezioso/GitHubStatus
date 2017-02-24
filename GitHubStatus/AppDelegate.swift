@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             let center  = UNUserNotificationCenter.current()
             center.delegate = self
             center.requestAuthorization(options: [.sound, .alert, .badge]) { (granted, error) in
-                if error == nil{
+                if error == nil {
                     UIApplication.shared.registerForRemoteNotifications()
                 }
             }
