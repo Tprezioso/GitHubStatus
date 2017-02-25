@@ -55,6 +55,16 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B59-gu-A8X">
+                                <rect key="frame" x="16" y="3" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="TT2-TK-sJb"/>
+                                    <constraint firstAttribute="height" constant="30" id="fYa-VB-QKb"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sendToGitHubStatus:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="88T-nL-hGE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="gHu-Fx-Rs2" secondAttribute="trailing" constant="8" id="093-ht-lrY"/>
@@ -64,10 +74,14 @@
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="WPm-Qc-kR4" secondAttribute="bottom" constant="8" id="9Ph-8h-C7f"/>
                             <constraint firstAttribute="leadingMargin" secondItem="gHu-Fx-Rs2" secondAttribute="leading" id="FP9-SW-mpK"/>
                             <constraint firstItem="WPm-Qc-kR4" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="L6S-Sf-Fwa"/>
+                            <constraint firstItem="B59-gu-A8X" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="3" id="Ueb-2a-Ppg"/>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="XWz-pp-4SR"/>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="8" id="YN7-3B-Tmx"/>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="gHu-Fx-Rs2" secondAttribute="bottom" constant="4" id="cFz-df-6yC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="B59-gu-A8X" secondAttribute="leading" id="kry-Cu-qvU"/>
                             <constraint firstItem="WPm-Qc-kR4" firstAttribute="leading" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="8" id="okm-gf-dhn"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="B59-gu-A8X" secondAttribute="bottom" constant="4" id="svW-x9-pdk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B59-gu-A8X" secondAttribute="trailing" id="uIE-l2-LmO"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>

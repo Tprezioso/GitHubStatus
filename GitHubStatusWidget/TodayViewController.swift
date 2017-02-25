@@ -75,6 +75,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         return "Last Updated\n\(month)/\(day)/\(year)"
     }
 
+    @IBAction func sendToGitHubStatus(_ sender: Any) {
+        let appURL = NSURL(string: "https://status.github.com/")
+        self.extensionContext?.open(appURL! as URL, completionHandler:nil)
+    }
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
