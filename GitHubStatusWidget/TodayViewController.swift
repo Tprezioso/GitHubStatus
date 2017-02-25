@@ -34,14 +34,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     // MARK: - Setup Label
     func setBackGroundColorForStatus(status:String) {
         switch status {
-        case "good":
-            self.statusLabel.backgroundColor = UIColor.green
-        case "minor":
-            self.statusLabel.backgroundColor = UIColor.yellow
-        case "major":
-            self.statusLabel.backgroundColor = UIColor.red
-        default:
-            self.statusLabel.backgroundColor = UIColor.white
+            case "good":
+                self.statusLabel.backgroundColor = UIColor.green
+            case "minor":
+                self.statusLabel.backgroundColor = UIColor.yellow
+            case "major":
+                self.statusLabel.backgroundColor = UIColor.red
+            default:
+                self.statusLabel.backgroundColor = UIColor.white
         }
     }
     

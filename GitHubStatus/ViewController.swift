@@ -60,17 +60,17 @@ class ViewController: UIViewController {
     
     func setBackGroundColorForStatus(status:String) {
         switch status {
-        case "good":
-            self.view.backgroundColor = UIColor.green
-        case "minor":
-            self.view.backgroundColor = UIColor.yellow
-            self.lastUpdatedLabel.textColor = UIColor.black
-            self.statusLabel.textColor = UIColor.black
-            self.poweredByLabel.textColor = UIColor.black
-        case "major":
-            self.view.backgroundColor = UIColor.red
-        default:
-            self.view.backgroundColor = UIColor.white
+            case "good":
+                self.view.backgroundColor = UIColor.green
+            case "minor":
+                self.view.backgroundColor = UIColor.yellow
+                self.lastUpdatedLabel.textColor = UIColor.black
+                self.statusLabel.textColor = UIColor.black
+                self.poweredByLabel.textColor = UIColor.black
+            case "major":
+                self.view.backgroundColor = UIColor.red
+            default:
+                self.view.backgroundColor = UIColor.white
         }
     }
     
