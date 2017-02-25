@@ -25,7 +25,6 @@ extension String {
 class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet var wigetLabel: UILabel!
     @IBOutlet var statusLabel: UILabel!
-    var statusForSharing = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
