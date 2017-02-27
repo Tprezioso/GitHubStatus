@@ -103,10 +103,6 @@ class ViewController: UIViewController {
                 let date = data?["last_updated"] as! String?
                 self.setBackGroundColorForStatus(status: status!)
                 self.lastUpdatedLabel.text = self.getDateFromJSONData(dateString: date!)
-                let extenstionDefault = UserDefaults.init(suiteName: "group.GitHubStatusWidget")
-                extenstionDefault?.set(status!, forKey: "status")
-                extenstionDefault?.set(self.lastUpdatedLabel.text, forKey: "lastUpdate")
-                extenstionDefault?.synchronize()
                 hud.hide(afterDelay: 0.5)
             }
         }
