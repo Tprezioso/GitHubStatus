@@ -2,20 +2,39 @@ PODS:
   - Alamofire (4.3.0)
   - BXProgressHUD (2.0):
     - PinAuto (~> 2.0)
+  - Firebase/Core (3.14.0):
+    - FirebaseAnalytics (= 3.7.0)
+    - FirebaseCore (= 3.5.1)
+  - FirebaseAnalytics (3.7.0):
+    - FirebaseCore (~> 3.5)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.5.1):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.9)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
   - MBProgressHUD (1.0.0)
   - PinAuto (2.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3)
   - BXProgressHUD (~> 2.0)
+  - Firebase/Core
   - MBProgressHUD (~> 1.0)
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   BXProgressHUD: b206b6e09e90c49eb390a68cc6d427bddaf80e87
+  Firebase: 85a581fb04e44f63ae9f4fbc8d6dabf4a4c18653
+  FirebaseAnalytics: 0d1b7d81d5021155be37702a94ba1ec16d45365d
+  FirebaseCore: 225d40532489835a034b8f4e2c9c87fbf4f615a2
+  FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   PinAuto: cc406f453a35292a9f892d7f94f5cc71e5e99762
 
-PODFILE CHECKSUM: fda54d3f32f109ba2141c1f5bee83702bf56df9d
+PODFILE CHECKSUM: fc659cf8c40867bf7c12c3a5283df94b14c30d13
 
 COCOAPODS: 1.2.0

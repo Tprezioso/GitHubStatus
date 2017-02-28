@@ -17,6 +17,7 @@
 		9FBF41051E55E349008688B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBF41031E55E349008688B0 /* LaunchScreen.storyboard */; };
 		9FBF41101E55E349008688B0 /* GitHubStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF410F1E55E349008688B0 /* GitHubStatusTests.swift */; };
 		9FBF411B1E55E349008688B0 /* GitHubStatusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF411A1E55E349008688B0 /* GitHubStatusUITests.swift */; };
+		9FC2C8D01E66243E003E36CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FC2C8CF1E66243E003E36CA /* GoogleService-Info.plist */; };
 		9FC4F58F1E55E85A00AA5A05 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC4F58E1E55E85A00AA5A05 /* Alamofire.framework */; };
 		9FCC48681E5762AF00B5594C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCC48671E5762AF00B5594C /* NotificationCenter.framework */; };
 		9FCC486E1E5762AF00B5594C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC486C1E5762AF00B5594C /* MainInterface.storyboard */; };
@@ -95,6 +96,7 @@
 		9FBF41161E55E349008688B0 /* GitHubStatusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubStatusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBF411A1E55E349008688B0 /* GitHubStatusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubStatusUITests.swift; sourceTree = "<group>"; };
 		9FBF411C1E55E349008688B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC2C8CF1E66243E003E36CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9FC4F58E1E55E85A00AA5A05 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GitHubStatus-eqfukfzpbbvplogobhdbscvsrdti/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		9FCC48611E57613700B5594C /* GitHubStatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubStatus.entitlements; sourceTree = "<group>"; };
 		9FCC48661E5762AF00B5594C /* GitHubStatusWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GitHubStatusWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +196,7 @@
 				9FCC487E1E57A72400B5594C /* ViewController */,
 				9FCC487F1E57A73600B5594C /* View */,
 				9FBF41061E55E349008688B0 /* Info.plist */,
+				9FC2C8CF1E66243E003E36CA /* GoogleService-Info.plist */,
 				9FBF40FE1E55E349008688B0 /* GitHubStatus.xcdatamodeld */,
 				9FCC487D1E57A71C00B5594C /* Images */,
 			);
@@ -408,6 +411,9 @@
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
 							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -468,6 +474,7 @@
 				9FBF40FD1E55E349008688B0 /* Main.storyboard in Resources */,
 				9FE272801E560916001453AF /* Octicons-mark-github.svg.png in Resources */,
 				9FE272821E5637C8001453AF /* Octocat.png in Resources */,
+				9FC2C8D01E66243E003E36CA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

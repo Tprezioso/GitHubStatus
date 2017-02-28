@@ -7,6 +7,7 @@ target 'GitHubStatus' do
   pod 'Alamofire', '~> 4.3'
   pod 'MBProgressHUD', '~> 1.0'
   pod 'BXProgressHUD', '~> 2.0'
+  pod 'Firebase/Core'
   # Pods for GitHubStatus
   target 'GitHubStatusTests' do
     inherit! :search_paths
