@@ -96,21 +96,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         print(userInfo)
         completionHandler(UIBackgroundFetchResult.newData)
     }
-    
-//    func registerForRemoteNotification() {
-//        if #available(iOS 10.0, *) {
-//            let center  = UNUserNotificationCenter.current()
-//            center.delegate = self
-//            center.requestAuthorization(options: [.sound, .alert, .badge]) { (granted, error) in
-//                if error == nil {
-//                    UIApplication.shared.registerForRemoteNotifications()
-//                }
-//            }
-//        } else {
-//            UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.sound, .alert, .badge], categories: nil))
-//            UIApplication.shared.registerForRemoteNotifications()
-//        }
-//    }
    
     // MARK: - Called when a notification is delivered to a foreground app.
     @available(iOS 10.0, *)
