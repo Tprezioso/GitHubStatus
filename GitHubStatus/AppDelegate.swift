@@ -67,9 +67,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         if let refreshedToken = FIRInstanceID.instanceID().token() {
             print("InstanceID token: \(refreshedToken)")
         }
-        
-        // Connect to FCM since connection may have failed when attempted before having a token.
-//        connectToFcm()
     }
 
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
@@ -81,7 +78,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         if let messageID = userInfo["gcmMessageIDKey"] {
             print("Message ID: \(messageID)")
         }
-        
         // Print full message.
         print(userInfo)
     }
@@ -96,10 +92,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         if let messageID = userInfo["gcmMessageIDKey"] {
             print("Message ID: \(messageID)")
         }
-        
         // Print full message.
         print(userInfo)
-        
         completionHandler(UIBackgroundFetchResult.newData)
     }
     
