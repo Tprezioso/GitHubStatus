@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import UserNotifications
 import Firebase
+import FirebaseMessaging
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -19,10 +20,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
-        registerForRemoteNotification()
-        application.registerForRemoteNotifications()
-        application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.sound, .alert, .badge], categories: nil))
+//        registerForRemoteNotification()
         
+        if #available(iOS 10.0, *) {
+            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+            UNUserNotificationCenter.current().requestAuthorization(
+                options: authOptions,
+                completionHandler: {_, _ in })
+            
+            // For iOS 10 display notification (sent via APNS)
+            UNUserNotificationCenter.current().delegate = self
+            // For iOS 10 data message (sent via FCM)
+//            FIRMessaging.messaging().remoteMessageDelegate = self
+            
+        } else {
+            let settings: UIUserNotificationSettings =
+                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+            application.registerUserNotificationSettings(settings)
+        }
+        
+        application.registerForRemoteNotifications()
+//        application.registerForRemoteNotifications()
+//        let token = FIRInstanceID.instanceID().token()!
         return true
     }
 
@@ -50,23 +69,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         self.saveContext()
     }
     
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        print(">>>>>>>>>>>>>>>>\(userInfo)")
-    }
-    func registerForRemoteNotification() {
-        if #available(iOS 10.0, *) {
-            let center  = UNUserNotificationCenter.current()
-            center.delegate = self
-            center.requestAuthorization(options: [.sound, .alert, .badge]) { (granted, error) in
-                if error == nil {
-                    UIApplication.shared.registerForRemoteNotifications()
-                }
-            }
-        } else {
-            UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.sound, .alert, .badge], categories: nil))
-            UIApplication.shared.registerForRemoteNotifications()
+    func tokenRefreshNotification(_ notification: Notification) {
+        if let refreshedToken = FIRInstanceID.instanceID().token() {
+            print("InstanceID token: \(refreshedToken)")
         }
+        
+        // Connect to FCM since connection may have failed when attempted before having a token.
+//        connectToFcm()
     }
+
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
+        // If you are receiving a notification message while your app is in the background,
+        // this callback will not be fired till the user taps on the notification launching the application.
+        // TODO: Handle data of notification
+        
+        // Print message ID.
+        if let messageID = userInfo["gcmMessageIDKey"] {
+            print("Message ID: \(messageID)")
+        }
+        
+        // Print full message.
+        print(userInfo)
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
+                     fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        // If you are receiving a notification message while your app is in the background,
+        // this callback will not be fired till the user taps on the notification launching the application.
+        // TODO: Handle data of notification
+        
+        // Print message ID.
+        if let messageID = userInfo["gcmMessageIDKey"] {
+            print("Message ID: \(messageID)")
+        }
+        
+        // Print full message.
+        print(userInfo)
+        
+        completionHandler(UIBackgroundFetchResult.newData)
+    }
+    
+//    func registerForRemoteNotification() {
+//        if #available(iOS 10.0, *) {
+//            let center  = UNUserNotificationCenter.current()
+//            center.delegate = self
+//            center.requestAuthorization(options: [.sound, .alert, .badge]) { (granted, error) in
+//                if error == nil {
+//                    UIApplication.shared.registerForRemoteNotifications()
+//                }
+//            }
+//        } else {
+//            UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.sound, .alert, .badge], categories: nil))
+//            UIApplication.shared.registerForRemoteNotifications()
+//        }
+//    }
    
     // MARK: - Called when a notification is delivered to a foreground app.
     @available(iOS 10.0, *)
