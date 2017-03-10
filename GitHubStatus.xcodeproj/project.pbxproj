@@ -164,6 +164,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9F38EBCF1E735377008E64BE /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				9FBF41061E55E349008688B0 /* Info.plist */,
+				9FC2C8CF1E66243E003E36CA /* GoogleService-Info.plist */,
+			);
+			name = plist;
+			sourceTree = "<group>";
+		};
 		9FBF40EB1E55E349008688B0 = {
 			isa = PBXGroup;
 			children = (
@@ -195,8 +204,7 @@
 				9FBF40F71E55E349008688B0 /* AppDelegate.swift */,
 				9FCC487E1E57A72400B5594C /* ViewController */,
 				9FCC487F1E57A73600B5594C /* View */,
-				9FBF41061E55E349008688B0 /* Info.plist */,
-				9FC2C8CF1E66243E003E36CA /* GoogleService-Info.plist */,
+				9F38EBCF1E735377008E64BE /* plist */,
 				9FBF40FE1E55E349008688B0 /* GitHubStatus.xcdatamodeld */,
 				9FCC487D1E57A71C00B5594C /* Images */,
 			);
