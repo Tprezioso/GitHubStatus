@@ -34,7 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             application.registerUserNotificationSettings(settings)
         }
         application.registerForRemoteNotifications()
-
+        let token = FIRInstanceID.instanceID().token()!
+        print(token)
         return true
     }
 
