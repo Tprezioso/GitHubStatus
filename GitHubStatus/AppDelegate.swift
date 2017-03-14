@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
         application.registerForRemoteNotifications()
         let token = FIRInstanceID.instanceID().token()!
-        print(token)
+        print("TOKEN >>>>>>>>\(token)")
         return true
     }
 
@@ -102,6 +102,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     private func application(application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         FIRInstanceID.instanceID().setAPNSToken(deviceToken as Data, type: FIRInstanceIDAPNSTokenType.sandbox)
+        print("Device Token>>>>>>>>>>>  \(deviceToken)")
     }
     
     // MARK: - Called when a notification is delivered to a foreground app.
