@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             application.registerUserNotificationSettings(settings)
         }
         application.registerForRemoteNotifications()
+        // MARK : The Token ia needed for push notifications
         let token = FIRInstanceID.instanceID().token()!
         print("TOKEN >>>>>>>>\(token)")
         return true
