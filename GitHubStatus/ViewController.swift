@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     }
 
     // MARK: - Setup View
+  
     func setupViews() {
         let navImage : UIImage = UIImage(named: "Octicons-mark-github.svg.png")!
         let navImageView = UIImageView(frame: CGRect(x:0, y: 0, width: 40, height: 40))
@@ -76,6 +77,7 @@ class ViewController: UIViewController {
     }
     
     // MARK: - Helper Method(s)
+    
     func takeStringFromBeging(stringToCut:String ,start: Int, end: Int) -> String {
         let startIndex = stringToCut.index(stringToCut.startIndex, offsetBy: start)
         let endIndex = stringToCut.index(stringToCut.startIndex, offsetBy: end)
@@ -92,6 +94,7 @@ class ViewController: UIViewController {
     }
     
     // MARK: - API Call
+    
     func api() {
         let hud = BXHUD.showProgress("Loading")
         Alamofire.request("https://status.github.com/api/status.json").responseJSON { response in
@@ -109,12 +112,14 @@ class ViewController: UIViewController {
     }
     
     // MARK: - Method Called On viewDidLoad Method
+    
     func startTheApp() {
         setupViews()
         api()
     }
 
     // MARK: - Action Method(s)
+    
     @IBAction func openURLButton(_ sender: Any) {
         let url = URL(string: "https://status.github.com/")
         UIApplication.shared.open(url!)
