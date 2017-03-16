@@ -9,6 +9,7 @@ target 'GitHubStatus' do
   pod 'BXProgressHUD', '~> 2.0'
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
+  pod 'Firebase/Database'
   # Pods for GitHubStatus
   target 'GitHubStatusTests' do
     inherit! :search_paths
