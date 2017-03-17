@@ -34,6 +34,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             application.registerUserNotificationSettings(settings)
         }
         application.registerForRemoteNotifications()
+     
+        // MARK : Reference to Firebase Database
+        var ref: FIRDatabaseReference!
+        ref = FIRDatabase.database().reference()
+        print(ref)
+
         // MARK : The Token ia needed for push notifications
         let token = FIRInstanceID.instanceID().token()!
         print("TOKEN >>>>>>>>\(token)")
