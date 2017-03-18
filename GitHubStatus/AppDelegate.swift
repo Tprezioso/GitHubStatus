@@ -158,6 +158,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         return container
     }()
 
+    func setupDatabase() {
+        <#function body#>
+    }
+    
     // MARK: - Core Data Saving support
 
     func saveContext () {
