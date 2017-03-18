@@ -41,9 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
         // MARK : Reference to Firebase Database
         var ref: FIRDatabaseReference!
-        ref = FIRDatabase.database().reference()
-        ref.child("users").setValue(["usersToken": token])
-        print(ref)
+        ref = FIRDatabase.database().reference(withPath: "push-token")
+       let tokenForDatabase = ref.child(token)
+        tokenForDatabase.setValue(token)
+        print(">>>>>>>>>>\(ref)")
 
         return true
     }
@@ -157,10 +158,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         })
         return container
     }()
-
-    func setupDatabase() {
-        <#function body#>
-    }
     
     // MARK: - Core Data Saving support
 
