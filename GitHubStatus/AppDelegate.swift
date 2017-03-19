@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // MARK : Reference to Firebase Database
         var ref: FIRDatabaseReference!
         ref = FIRDatabase.database().reference(withPath: "push-token")
-       let tokenForDatabase = ref.child(token)
+        let tokenForDatabase = ref.child(token)
         tokenForDatabase.setValue(token)
         print(">>>>>>>>>>\(ref)")
 
