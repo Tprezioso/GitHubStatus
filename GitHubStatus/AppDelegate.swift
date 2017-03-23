@@ -48,7 +48,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         tokenForDatabase.setValue(token)
         // TODO : Need to see if this saves to database
         print(">>>>>>>>>>\(ref)")
-
+        ref.observe(.value, with: { snapshot in
+            print(snapshot.value!)
+        })
         return true
     }
 
