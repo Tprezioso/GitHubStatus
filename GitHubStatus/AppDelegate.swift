@@ -51,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         ref.observe(.value, with: { snapshot in
             print(snapshot.value!)
         })
+
         return true
     }
 
