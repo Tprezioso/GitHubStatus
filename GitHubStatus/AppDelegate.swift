@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         var ref: FIRDatabaseReference!
         ref = FIRDatabase.database().reference(withPath: "push-token")
-        let tokenForDatabase = ref.child(token)
+        let tokenForDatabase = ref.child("user_token")
         tokenForDatabase.setValue(["Token" : token])
         // TODO : Need to see if this saves to database
         print(">>>>>>>>>>\(ref)")
