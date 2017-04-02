@@ -32,12 +32,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             let settings: UIUserNotificationSettings =
                 UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
             application.registerUserNotificationSettings(settings)
+            getUserTokeFTIA()
         }
         application.registerForRemoteNotifications()
-     
+
+        return true
+    }
+    
+    func getUserTokeFTIA() {
         // MARK : The Token ia needed for push notifications
         let token = FIRInstanceID.instanceID().token()!
-
+        
         // MARK : Reference to Firebase Database
         var ref: FIRDatabaseReference!
         ref = FIRDatabase.database().reference(withPath: "push-token")
@@ -46,8 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         ref.observe(.value, with: { snapshot in
             print(snapshot.value!)
         })
-
-        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
