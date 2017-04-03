@@ -92,6 +92,29 @@ class ViewController: UIViewController {
         
         return "Last Updated\n\(month)/\(day)/\(year)"
     }
+
+    // MARK: - Check for internet connection using reachability
+    
+    func updateUserInterface() {
+        guard let status = Network.reachability?.status else { return }
+        switch status {
+        case .unreachable:
+            view.backgroundColor = .red
+        case .wifi:
+            view.backgroundColor = .green
+        case .wwan:
+            view.backgroundColor = .yellow
+        }
+        print("Reachability Summary")
+        print("Status:", status)
+        print("HostName:", Network.reachability?.hostname ?? "nil")
+        print("Reachable:", Network.reachability?.isReachable ?? "nil")
+        print("Wifi:", Network.reachability?.isReachableViaWiFi ?? "nil")
+    }
+    func statusManager(_ notification: NSNotification) {
+        updateUserInterface()
+    }
+
     
     // MARK: - API Call
     
