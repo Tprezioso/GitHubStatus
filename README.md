@@ -1,6 +1,6 @@
 <h1>GitHub Status</h1>
 
- An App for checking the status of GitHub. It sends a push notification anytime the status of GitHub changes. Once in the app if you tap the Octocat and will be sent to the GitHub Status webpage with more information on how GitHub is running. 
+ This is an App for checking and receive push notification on the status of GitHub. It checks and sends push notification every half hour on the status of GitHub if it changes. Once in the app if you tap the Octocat you be sent to the GitHub Status webpage with more information on GitHub current status. 
 
 * Uses GitHub Status API
 * Firebase for push notification
