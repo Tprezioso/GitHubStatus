@@ -105,6 +105,7 @@ class ViewController: UIViewController {
             print("WIFI")
             view.backgroundColor = .green
         case .wwan:
+            print("this is working?")
             view.backgroundColor = .yellow
         }
         print("Reachability Summary")
