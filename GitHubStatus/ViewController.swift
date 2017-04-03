@@ -99,8 +99,10 @@ class ViewController: UIViewController {
         guard let status = Network.reachability?.status else { return }
         switch status {
         case .unreachable:
-            view.backgroundColor = .red
+            print("Unreachable")
+//            view.backgroundColor = .red
         case .wifi:
+            print("WIFI")
             view.backgroundColor = .green
         case .wwan:
             view.backgroundColor = .yellow
