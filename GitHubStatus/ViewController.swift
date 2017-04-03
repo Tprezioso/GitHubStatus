@@ -138,6 +138,8 @@ class ViewController: UIViewController {
     
     func startTheApp() {
         setupViews()
+        NotificationCenter.default.addObserver(self, selector: #selector(statusManager), name: .flagsChanged, object: Network.reachability)
+        updateUserInterface()
         api()
     }
 
