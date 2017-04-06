@@ -102,6 +102,7 @@ class ViewController: UIViewController {
             print("Unreachable")
 //            view.backgroundColor = .red
             let hud = BXHUD.self
+            // TODO : Test to see if this work
             hud.hideSuccess()
         case .wifi:
             print("WIFI")
