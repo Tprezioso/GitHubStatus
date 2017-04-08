@@ -104,6 +104,11 @@ class ViewController: UIViewController {
             let hud = BXHUD.self
             // TODO : Test to see if this work
             hud.hideSuccess()
+            let alert = UIAlertController(title: "No Network Connection", message: "It seem you have lost your internet connection", preferredStyle: .actionSheet)
+            alert.addAction(UIAlertAction(title: "Reload", style: .default) { action in
+                self.api()
+                // perhaps use action.title here
+            })
         case .wifi:
             print("WIFI")
             view.backgroundColor = .green
