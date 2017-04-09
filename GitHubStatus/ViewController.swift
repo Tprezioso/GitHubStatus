@@ -106,8 +106,8 @@ class ViewController: UIViewController {
             hud.hideSuccess()
             let alert = UIAlertController(title: "No Network Connection", message: "It seem you have lost your internet connection", preferredStyle: .actionSheet)
             alert.addAction(UIAlertAction(title: "Reload", style: .default) { action in
+                // Reloads API call to refresh Github status
                 self.api()
-                // perhaps use action.title here
             })
         case .wifi:
             print("WIFI")
