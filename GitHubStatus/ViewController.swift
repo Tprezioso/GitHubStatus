@@ -100,7 +100,6 @@ class ViewController: UIViewController {
         switch status {
         case .unreachable:
             print("Unreachable")
-//            view.backgroundColor = .red
             let hud = BXHUD.self
             // TODO : Test to see if this work
             hud.hideSuccess()
@@ -111,10 +110,8 @@ class ViewController: UIViewController {
             })
         case .wifi:
             print("WIFI")
-            view.backgroundColor = .green
         case .wwan:
             print("this is working?")
-            view.backgroundColor = .yellow
         }
         print("Reachability Summary")
         print("Status:", status)
