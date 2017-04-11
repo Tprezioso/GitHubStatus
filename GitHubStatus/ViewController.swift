@@ -109,7 +109,7 @@ class ViewController: UIViewController {
                 self.api()
             })
         case .wifi:
-            print("WIFI")
+            print("WIFI is connected")
         case .wwan:
             print("this is working?")
         }
