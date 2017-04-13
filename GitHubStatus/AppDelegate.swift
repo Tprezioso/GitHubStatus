@@ -32,7 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             let settings: UIUserNotificationSettings =
                 UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
             application.registerUserNotificationSettings(settings)
-            getUserTokeFTIA()
         }
         application.registerForRemoteNotifications()
        
@@ -48,9 +47,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         } catch {
             print(error)
         }
-
+        
+        firstTimeInApp()
 
         return true
+    }
+    
+    func firstTimeInApp() {
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if launchedBefore  {
+            print("Not first launch.")
+        } else {
+            print("First launch, setting UserDefault.")
+            getUserTokeFTIA()
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+        }
     }
     
     func getUserTokeFTIA() {
@@ -64,6 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         tokenForDatabase.setValue(["Token" : token])
         ref.observe(.value, with: { snapshot in
             print(snapshot.value!)
+            print(">>>>>>>>>>saved token")
         })
     }
 
