@@ -54,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
     
     func firstTimeInApp() {
+        // MARK : Runs anything for first time in app
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         if launchedBefore  {
             print("Not first launch.")
