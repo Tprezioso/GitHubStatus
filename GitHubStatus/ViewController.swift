@@ -105,7 +105,7 @@ class ViewController: UIViewController {
             hud.hideSuccess()
             let alert = UIAlertController(title: "No Network Connection", message: "It seem you have lost your internet connection", preferredStyle: .actionSheet)
             alert.addAction(UIAlertAction(title: "Reload", style: .default) { action in
-                // Reloads App 
+                // Reloads App On Alert button press 
                 self.startTheApp()
             })
             self.present(alert, animated: true)
