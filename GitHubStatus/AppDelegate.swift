@@ -47,7 +47,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         } catch {
             print(error)
         }
-        
 
         return true
     }
