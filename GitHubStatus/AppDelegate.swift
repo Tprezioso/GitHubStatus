@@ -98,7 +98,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         tokenForDatabase.setValue(["Token" : token])
         ref.observe(.value, with: { snapshot in
             print(snapshot.value!)
-            print(">>>>>>>>>>saved token")
         })
     }
     
