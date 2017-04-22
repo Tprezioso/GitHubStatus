@@ -100,16 +100,16 @@ class ViewController: UIViewController {
         switch status {
         case .unreachable:
             print("Unreachable")
-            let hud = BXHUD.self
-            // TODO : Test to see if this work
-            hud.hideSuccess()
-            let alert = UIAlertController(title: "No Network Connection", message: "It seem you have lost your internet connection", preferredStyle: .actionSheet)
-            alert.addAction(UIAlertAction(title: "Reload", style: .default) { action in
-                // Reloads App On Alert button press
-                self.startTheApp()
-            })
-            self.present(alert, animated: true)
-            hud.hideSuccess()
+//            let hud = BXHUD.self
+//            // TODO : Test to see if this work
+//            hud.hideSuccess()
+//            let alert = UIAlertController(title: "No Network Connection", message: "It seem you have lost your internet connection", preferredStyle: .actionSheet)
+//            alert.addAction(UIAlertAction(title: "Reload", style: .default) { action in
+//                // Reloads App On Alert button press
+//                self.startTheApp()
+//            })
+//            self.present(alert, animated: true)
+//            hud.hideSuccess()
         case .wifi:
             print("WIFI is connected")
         case .wwan:
