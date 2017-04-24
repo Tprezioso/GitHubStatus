@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,23 +22,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="git status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ok-KD-aRu">
-                                <rect key="frame" x="16" y="241" width="343" height="185"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="computerIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="2yN-hh-nkQ">
+                                <rect key="frame" x="16" y="134" width="343" height="333"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="7AT-15-uTI"/>
-                                    <constraint firstAttribute="height" constant="185" id="FkP-Cj-bYy"/>
+                                    <constraint firstAttribute="width" constant="343" id="Hbs-A6-dT2"/>
+                                    <constraint firstAttribute="height" constant="333" id="gwF-4d-sxg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Git Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kh-hk-3j0">
+                                <rect key="frame" x="115" y="184" width="144" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="MXg-tP-Ho4"/>
+                                    <constraint firstAttribute="width" constant="144" id="V4M-9r-CS7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-CondensedBold" family="American Typewriter" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4Ok-KD-aRu" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="221" id="NbF-3h-6mF"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="4Ok-KD-aRu" secondAttribute="leading" id="URo-mp-QMN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4Ok-KD-aRu" secondAttribute="trailing" id="oiR-Ct-5vi"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="4Ok-KD-aRu" secondAttribute="bottom" constant="241" id="xXU-tb-qhy"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="2yN-hh-nkQ" secondAttribute="leading" id="BJG-kW-4QZ"/>
+                            <constraint firstItem="2yN-hh-nkQ" firstAttribute="top" secondItem="4Kh-hk-3j0" secondAttribute="bottom" constant="-178" id="GCp-w3-RCm"/>
+                            <constraint firstItem="2yN-hh-nkQ" firstAttribute="leading" secondItem="4Kh-hk-3j0" secondAttribute="trailing" constant="-243" id="TxD-CV-IPM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2yN-hh-nkQ" secondAttribute="trailing" id="Xf8-cx-D2w"/>
+                            <constraint firstItem="2yN-hh-nkQ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="114" id="mYR-xn-y7C"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="2yN-hh-nkQ" secondAttribute="bottom" constant="200" id="zkN-H7-ID0"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -47,4 +56,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="computerIcon.png" width="512" height="512"/>
+    </resources>
 </document>
