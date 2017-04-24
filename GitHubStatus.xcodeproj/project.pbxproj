@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6ECAF0AD6DD8279BE7EA5136 /* Pods_GitHubStatus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84177B7A59CD838DEAE93C93 /* Pods_GitHubStatus.framework */; };
 		876B91F0074D95771A56D4CC /* Pods_GitHubStatusWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586C3E90E92B229F42BEAEC1 /* Pods_GitHubStatusWidget.framework */; };
-		9F81971C1EAE8C61009467F6 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81971B1EAE8C61009467F6 /* LaunchScreenViewController.swift */; };
 		9F81971E1EAE9E25009467F6 /* computerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F81971D1EAE9E25009467F6 /* computerIcon.png */; };
 		9FADA7A31E92D96A0019A243 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FADA7A21E92D96A0019A243 /* Reachability.swift */; };
 		9FBF40F81E55E349008688B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF40F71E55E349008688B0 /* AppDelegate.swift */; };
@@ -85,7 +84,6 @@
 		9F0315DF1E5F846500508E1C /* BXProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BXProgressHUD.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GitHubStatus-eqfukfzpbbvplogobhdbscvsrdti/Build/Products/Debug-iphonesimulator/BXProgressHUD/BXProgressHUD.framework"; sourceTree = "<group>"; };
 		9F0315E11E5F848E00508E1C /* PinAuto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PinAuto.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GitHubStatus-eqfukfzpbbvplogobhdbscvsrdti/Build/Products/Debug-iphonesimulator/PinAuto/PinAuto.framework"; sourceTree = "<group>"; };
 		9F23C5771E55E6F4003499D6 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Pods/../build/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
-		9F81971B1EAE8C61009467F6 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		9F81971D1EAE9E25009467F6 /* computerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = computerIcon.png; sourceTree = "<group>"; };
 		9FADA7A21E92D96A0019A243 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		9FBF40F41E55E349008688B0 /* GitHubStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,7 +268,6 @@
 			isa = PBXGroup;
 			children = (
 				9FBF40F91E55E349008688B0 /* ViewController.swift */,
-				9F81971B1EAE8C61009467F6 /* LaunchScreenViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -705,7 +702,6 @@
 				9FBF40FA1E55E349008688B0 /* ViewController.swift in Sources */,
 				9FBF40F81E55E349008688B0 /* AppDelegate.swift in Sources */,
 				9FADA7A31E92D96A0019A243 /* Reachability.swift in Sources */,
-				9F81971C1EAE8C61009467F6 /* LaunchScreenViewController.swift in Sources */,
 				9FBF41001E55E349008688B0 /* GitHubStatus.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
