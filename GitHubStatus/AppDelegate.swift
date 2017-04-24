@@ -75,6 +75,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         self.saveContext()
     }
     
+    // MARK : First time in app
+    
     func firstTimeInApp() {
         // MARK : Runs functions for first time in app
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
@@ -86,6 +88,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             UserDefaults.standard.set(true, forKey: "launchedBefore")
         }
     }
+    
+    // MARK : Tokens for push notification
     
     func getUserTokeFTIA() {
         // MARK : The Token ia needed for push notifications
@@ -108,6 +112,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Commented out because of crash error
         // connectToFcm()
     }
+    
+    // Mark : Push Notification 
 
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
         // If you are receiving a notification message while your app is in the background,
