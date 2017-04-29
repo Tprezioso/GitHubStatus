@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GitStatIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="2yN-hh-nkQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GitStatusIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="2yN-hh-nkQ">
                                 <rect key="frame" x="16" y="134" width="343" height="333"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="Hbs-A6-dT2"/>
@@ -45,6 +45,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="GitStatIcon.png" width="512" height="512"/>
+        <image name="GitStatusIcon.png" width="512" height="512"/>
     </resources>
 </document>
