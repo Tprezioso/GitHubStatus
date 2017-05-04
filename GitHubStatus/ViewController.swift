@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     }
 
     // MARK: - Setup View
-  
+    
     func setupViews() {
         let navImage : UIImage = UIImage(named: "GitStatusIcon.png")!
         let navImageView = UIImageView(frame: CGRect(x:0, y: 0, width: 40, height: 40))
