@@ -85,7 +85,7 @@ class ViewController: UIViewController {
         return stringToCut[startIndex...endIndex]
     }
     
-    func getDateFromJSONData(dateString: String) -> String {
+    func getDateFromJSONDate(dateString: String) -> String {
         let day = takeStringFromBeging(stringToCut: dateString, start: 8, end: 9)
         let month = takeStringFromBeging(stringToCut: dateString, start: 5, end: 6)
         let year = takeStringFromBeging(stringToCut: dateString, start: 0, end: 3)
@@ -137,7 +137,7 @@ class ViewController: UIViewController {
                 self.statusLabel.text = " Status: \(status!.capitalizingFirstLetter())"
                 let date = data?["last_updated"] as! String?
                 self.setBackGroundColorForStatus(status: status!)
-                self.lastUpdatedLabel.text = self.getDateFromJSONData(dateString: date!)
+                self.lastUpdatedLabel.text = self.getDateFromJSONDate(dateString: date!)
                 hud.hide(afterDelay: 0.5)
             }
         }

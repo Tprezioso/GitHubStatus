@@ -11,6 +11,7 @@ import CoreData
 import UserNotifications
 import Firebase
 import FirebaseMessaging
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -62,6 +63,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        func api() {
+            Alamofire.request("https://status.github.com/api/status.json").responseJSON { response in
+                if let JSON = response.result.value {
+                    let data = JSON as? [String: Any]
+                    let status = data?["status"] as! String?
+                    let date = data?["last_updated"] as! String?
+                }
+            }
+        }
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

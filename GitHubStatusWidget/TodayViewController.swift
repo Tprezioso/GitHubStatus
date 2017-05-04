@@ -53,7 +53,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 let data = JSON as? [String: Any]
                 let status = data?["status"] as! String?
                 let date = data?["last_updated"] as! String?
-                let convertedDate = self.getDateFromJSONData(dateString: date!)
+                let convertedDate = self.getDateFromJSONDate(dateString: date!)
                 self.setBackGroundColorForStatus(status: status!)
                 self.wigetLabel.text = " Status: \(status!.capitalizingFirstLetter())\n\n \(convertedDate)"
             }
@@ -68,7 +68,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         return stringToCut[startIndex...endIndex]
     }
     
-    func getDateFromJSONData(dateString: String) -> String {
+    func getDateFromJSONDate(dateString: String) -> String {
         let day = takeStringFromBeging(stringToCut: dateString, start: 8, end: 9)
         let month = takeStringFromBeging(stringToCut: dateString, start: 5, end: 6)
         let year = takeStringFromBeging(stringToCut: dateString, start: 0, end: 3)
