@@ -64,7 +64,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "yourNotificationName"), object: nil)
-        //        api()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -76,24 +75,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
-    }
-    
-    func api() {
-        var dateToSave = ""
-        var statusToSave = ""
-        
-        Alamofire.request("https://status.github.com/api/status.json").responseJSON { response in
-            if let JSON = response.result.value {
-                let data = JSON as? [String: Any]
-                let status = data?["status"] as! String?
-                let date = data?["last_updated"] as! String?
-                dateToSave = date!
-                statusToSave = status!
-                UserDefaults.standard.set(statusToSave, forKey: "statusOnReturn")
-                print(">>>>>>>\(statusToSave)")
-                print(">>>>>>>>>>\(dateToSave)")
-            }
-        }
     }
     
     // MARK : First time in app
