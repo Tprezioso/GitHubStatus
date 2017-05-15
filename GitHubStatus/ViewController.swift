@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     }
 
     func notificationCenter() {
-        let notificationName = Notification.Name("yourNotificationName")
+        let notificationName = Notification.Name("reloadViewFromBackground")
         NotificationCenter.default.addObserver(self, selector: #selector(startTheApp), name: notificationName, object: nil)
     }
 
