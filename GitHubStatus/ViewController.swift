@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet var octocatImage: UIImageView!
     @IBOutlet var poweredByLabel: UILabel!
    
+    // MARK: - View Life Cycle(s)
     override func viewDidLoad() {
         super.viewDidLoad()
         startTheApp()
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
         notificationCenter()
     }
 
+    // MARK: - Notification Center Observer
     func notificationCenter() {
         let notificationName = Notification.Name("reloadViewFromBackground")
         NotificationCenter.default.addObserver(self, selector: #selector(startTheApp), name: notificationName, object: nil)
