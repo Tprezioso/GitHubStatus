@@ -34,6 +34,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         startTheApp()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        notificationCenter()
+    }
+
+    func notificationCenter() {
+        let notificationName = Notification.Name("yourNotificationName")
+        NotificationCenter.default.addObserver(self, selector: #selector(startTheApp), name: notificationName, object: nil)
+    }
 
     // MARK: - Setup View
     
@@ -149,7 +158,7 @@ class ViewController: UIViewController {
     func startTheApp() {
         setupViews()
         NotificationCenter.default.addObserver(self, selector: #selector(statusManager), name: .flagsChanged, object: Network.reachability)
-        updateUserInterface()
+      //  updateUserInterface()
         api()
     }
 
