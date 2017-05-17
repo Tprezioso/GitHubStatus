@@ -11,7 +11,6 @@ import CoreData
 import UserNotifications
 import Firebase
 import FirebaseMessaging
-import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
