@@ -89,7 +89,7 @@ class ViewController: UIViewController {
     
     // MARK: - Helper Method(s)
     
-    func takeStringFromBeging(stringToCut:String ,start: Int, end: Int) -> String {
+    func takeStringFromBeginning(stringToCut:String ,start: Int, end: Int) -> String {
         let startIndex = stringToCut.index(stringToCut.startIndex, offsetBy: start)
         let endIndex = stringToCut.index(stringToCut.startIndex, offsetBy: end)
         
@@ -97,9 +97,9 @@ class ViewController: UIViewController {
     }
     
     func getDateFromJSONDate(dateString: String) -> String {
-        let day = takeStringFromBeging(stringToCut: dateString, start: 8, end: 9)
-        let month = takeStringFromBeging(stringToCut: dateString, start: 5, end: 6)
-        let year = takeStringFromBeging(stringToCut: dateString, start: 0, end: 3)
+        let day = takeStringFromBeginning(stringToCut: dateString, start: 8, end: 9)
+        let month = takeStringFromBeginning(stringToCut: dateString, start: 5, end: 6)
+        let year = takeStringFromBeginning(stringToCut: dateString, start: 0, end: 3)
         
         return "Last Updated\n\(month)/\(day)/\(year)"
     }
