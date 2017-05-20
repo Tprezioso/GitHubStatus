@@ -113,7 +113,7 @@ class ViewController: UIViewController {
             print("Unreachable")
             let hud = BXHUD.self
             hud.hideSuccess()
-            let alert = UIAlertController(title: "No Network Connection", message: "It seem you have lost your internet connection", preferredStyle: .actionSheet)
+            let alert = UIAlertController(title: "No Network Connection", message: "It Seem You Have Lost Your Internet connection", preferredStyle: .actionSheet)
             alert.addAction(UIAlertAction(title: "Reload", style: .default) { action in
                 // Reloads App On Alert button press
                 self.startTheApp()
