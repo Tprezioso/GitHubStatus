@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     @IBOutlet var poweredByLabel: UILabel!
    
     // MARK: - View Life Cycle(s)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         startTheApp()
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
     }
 
     // MARK: - Notification Center Observer
+    
     func notificationCenter() {
         let notificationName = Notification.Name("reloadViewFromBackground")
         NotificationCenter.default.addObserver(self, selector: #selector(startTheApp), name: notificationName, object: nil)
