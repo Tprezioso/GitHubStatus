@@ -9,3 +9,4 @@
 * GitHub Status API
 * Firebase for push notification
 * Firebase Database for server push notification
+* Firebase for host backend for check for updates
