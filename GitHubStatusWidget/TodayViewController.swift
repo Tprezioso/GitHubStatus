@@ -42,21 +42,24 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             case "major":
                 self.statusLabel.backgroundColor = UIColor.red
             default:
-                self.statusLabel.backgroundColor = UIColor.white
+                self.statusLabel.backgroundColor = UIColor.clear
         }
     }
     
     // MARK: - API Call
     func updateLabel() {
         Alamofire.request("https://status.github.com/api/status.json").responseJSON { response in
+            if ((response.error) != nil) {
+                self.wigetLabel.text = response.error!.localizedDescription
+            }
+            
             if let JSON = response.result.value {
                 let data = JSON as? [String: Any]
                 let status = data?["status"] as! String?
                 let date = data?["last_updated"] as! String?
                 let convertedDate = self.getDateFromJSONDate(dateString: date!)
                 self.setBackGroundColorForStatus(status: status!)
-                self.wigetLabel.text = " Status: \(status!.capitalizingFirstLetter())\n\n \(convertedDate)"
-            }
+                self.wigetLabel.text = " Status: \(status!.capitalizingFirstLetter())\n\n \(convertedDate)"                }
         }
     }
 
@@ -80,6 +83,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         let appURL = NSURL(string: "https://status.github.com/")
         self.extensionContext?.open(appURL! as URL, completionHandler:nil)
     }
+    
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
