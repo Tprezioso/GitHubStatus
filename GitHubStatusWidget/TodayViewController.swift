@@ -49,6 +49,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     // MARK: - API Call
     func updateLabel() {
         Alamofire.request("https://status.github.com/api/status.json").responseJSON { response in
+            // Check for error of API call
             if ((response.error) != nil) {
                 self.wigetLabel.text = response.error!.localizedDescription
             }
