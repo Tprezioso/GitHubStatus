@@ -48,6 +48,10 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(startTheApp), name: notificationName, object: nil)
     }
 
+    func statusManager(_ notification: NSNotification) {
+        updateUserInterface()
+    }
+    
     // MARK: - Setup View
     
     func setupViews() {
@@ -106,7 +110,7 @@ class ViewController: UIViewController {
         return "Last Updated\n\(month)/\(day)/\(year)"
     }
 
-    // MARK: - Check for internet connection using reachability
+    // MARK: - Check for internet connection using Reachability
     
     func updateUserInterface() {
         guard let status = Network.reachability?.status else { return }
@@ -132,10 +136,6 @@ class ViewController: UIViewController {
         print("HostName:", Network.reachability?.hostname ?? "nil")
         print("Reachable:", Network.reachability?.isReachable ?? "nil")
         print("Wifi:", Network.reachability?.isReachableViaWiFi ?? "nil")
-    }
-
-    func statusManager(_ notification: NSNotification) {
-        updateUserInterface()
     }
 
     // MARK: - API Call
