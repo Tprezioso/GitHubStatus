@@ -131,12 +131,13 @@ class ViewController: UIViewController {
         case .wwan:
             print("this is working?")
         }
+
     // Mark: - Print statements for internet connection
-//        print("Reachability Summary")
-//        print("Status:", status)
-//        print("HostName:", Network.reachability?.hostname ?? "nil")
-//        print("Reachable:", Network.reachability?.isReachable ?? "nil")
-//        print("Wifi:", Network.reachability?.isReachableViaWiFi ?? "nil")
+        print("Reachability Summary")
+        print("Status:", status)
+        print("HostName:", Network.reachability?.hostname ?? "nil")
+        print("Reachable:", Network.reachability?.isReachable ?? "nil")
+        print("Wifi:", Network.reachability?.isReachableViaWiFi ?? "nil")
     }
 
     // MARK: - API Call
