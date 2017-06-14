@@ -94,6 +94,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func getUserTokeFTIA() {
         // MARK : The Token ia needed for push notifications
+        // TODO : Watch for token error when testing push notifications on multiple devices
         let token = FIRInstanceID.instanceID().token()!
         
         // MARK : Reference to Firebase Database
