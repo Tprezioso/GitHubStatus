@@ -82,6 +82,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // MARK : Runs functions for first time in app
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         if launchedBefore  {
+            // TODO : issue with checking for user token stoping push notifications
+            
             print("Not first launch.")
         } else {
             print("First launch, setting UserDefault.")
