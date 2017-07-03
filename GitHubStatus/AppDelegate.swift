@@ -86,7 +86,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             print("Not first launch.")
         } else {
             print("First launch, setting UserDefault.")
-            getUserTokeFTIA()
+            //getUserTokeFTIA()
             UserDefaults.standard.set(true, forKey: "launchedBefore")
         }
     }
