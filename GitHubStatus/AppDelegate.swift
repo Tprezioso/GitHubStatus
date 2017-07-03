@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         } catch {
             print(error)
         }
-
+        
         return true
     }
 
@@ -67,7 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-        firstTimeInApp()
+       // firstTimeInApp()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
@@ -86,8 +86,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             print("Not first launch.")
         } else {
             print("First launch, setting UserDefault.")
-            //getUserTokeFTIA()
-            UserDefaults.standard.set(true, forKey: "launchedBefore")
+            getUserTokeFTIA()
         }
     }
     
@@ -96,8 +95,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func getUserTokeFTIA() {
         // MARK : The Token ia needed for push notifications
         // TODO : Watch for token error when testing push notifications on multiple devices
-        let token = FIRInstanceID.instanceID().token()!
-        
+        let token = FIRInstanceID.instanceID().token() //FIRInstanceID.instanceID().token()!
+        print("\(token)>>>>>>>>>>>>>>>>>>>>>>>>")
         // MARK : Reference to Firebase Database
         var ref: FIRDatabaseReference!
         ref = FIRDatabase.database().reference(withPath: "push-token")
@@ -106,6 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         ref.observe(.value, with: { snapshot in
             print(snapshot.value!)
         })
+        UserDefaults.standard.set(true, forKey: "launchedBefore")
     }
     
     func tokenRefreshNotification(_ notification: Notification) {
