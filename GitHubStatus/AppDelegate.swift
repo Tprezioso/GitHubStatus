@@ -86,7 +86,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         if launchedBefore  {
             // TODO : issue with checking for user token stoping push notifications
-            // push notifications arent working when and when it isnt on
+            // push notifications arent working when it isnt placed in the code
             print("Not first launch.")
         } else {
             print("First launch, setting UserDefault.")
