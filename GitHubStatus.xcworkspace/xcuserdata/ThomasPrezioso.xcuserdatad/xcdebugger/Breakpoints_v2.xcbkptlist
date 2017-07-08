@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GitHubStatus/AppDelegate.swift"
-            timestampString = "520981664.199217"
+            timestampString = "521237885.187181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "getUserTokeFTIA()"
             landmarkType = "7">
          </BreakpointContent>
