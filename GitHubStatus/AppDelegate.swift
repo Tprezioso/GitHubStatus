@@ -46,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         } catch {
             print(error)
         }
+        // MARK : TODO need to test this to see if it fixes push notification
         getUserTokeFTIA()
         
         return true
