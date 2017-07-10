@@ -46,8 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         } catch {
             print(error)
         }
-        // MARK : TODO need to test this to see if it fixes push notification
-        getUserTokeFTIA()
         
         return true
     }
@@ -56,6 +54,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 //        firstTimeInApp()
+//        getUserTokeFTIA()
+        // MARK : TODO need to test this to see if it fixes push notification
+        let token = FIRInstanceID.instanceID().token() //FIRInstanceID.instanceID().token()!
+        print("\(token)>>>>>>>>>>>>>>>>>>>>>>>>")
+        // MARK : Reference to Firebase Database
+        var ref: FIRDatabaseReference!
+        ref = FIRDatabase.database().reference(withPath: "push-token")
+        let tokenForDatabase = ref.child("user_token")
+        tokenForDatabase.setValue(["Token" : token])
+        ref.observe(.value, with: { snapshot in
+            print(snapshot.value!)
+        })
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -68,6 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadViewFromBackground"), object: nil)
+//        getUserTokeFTIA()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
