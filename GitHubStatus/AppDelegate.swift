@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FIRApp.configure()
+        FirebaseApp.configure()
         if #available(iOS 10.0, *) {
             let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
             UNUserNotificationCenter.current().requestAuthorization(
@@ -56,11 +56,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 //        firstTimeInApp()
 //        getUserTokeFTIA()
         // MARK : TODO need to test this to see if it fixes push notification
-        let token = FIRInstanceID.instanceID().token() //FIRInstanceID.instanceID().token()!
+        let token = InstanceID.instanceID().token() //FIRInstanceID.instanceID().token()!
         print("\(token)>>>>>>>>>>>>>>>>>>>>>>>>")
         // MARK : Reference to Firebase Database
-        var ref: FIRDatabaseReference!
-        ref = FIRDatabase.database().reference(withPath: "push-token")
+        var ref: DatabaseReference!
+        ref = Database.database().reference(withPath: "push-token")
         let tokenForDatabase = ref.child("user_token")
         tokenForDatabase.setValue(["Token" : token])
         ref.observe(.value, with: { snapshot in
@@ -112,11 +112,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func getUserTokeFTIA() {
         // MARK : The Token ia needed for push notifications
         // TODO : Watch for token error when testing push notifications on multiple devices
-        let token = FIRInstanceID.instanceID().token()! //FIRInstanceID.instanceID().token()!
+        let token = InstanceID.instanceID().token()! //FIRInstanceID.instanceID().token()!
         print("\(token)>>>>>>>>>>>>>>>>>>>>>>>>")
         // MARK : Reference to Firebase Database
-        var ref: FIRDatabaseReference!
-        ref = FIRDatabase.database().reference(withPath: "push-token")
+        var ref: DatabaseReference!
+        ref = Database.database().reference(withPath: "push-token")
         let tokenForDatabase = ref.child("user_token")
         tokenForDatabase.setValue(["Token" : token])
         ref.observe(.value, with: { snapshot in
@@ -126,7 +126,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
     
     func tokenRefreshNotification(_ notification: Notification) {
-        if let refreshedToken = FIRInstanceID.instanceID().token() {
+        if let refreshedToken = InstanceID.instanceID().token() {
             print("InstanceID token: \(refreshedToken)")
         }
         // Commented out because of crash error
@@ -165,7 +165,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     private func application(application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        FIRInstanceID.instanceID().setAPNSToken(deviceToken as Data, type: FIRInstanceIDAPNSTokenType.sandbox)
+        InstanceID.instanceID().setAPNSToken(deviceToken as Data, type: InstanceIDAPNSTokenType.sandbox)
     }
     
     // MARK: - Called when a notification is delivered to a foreground app.
