@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 //        firstTimeInApp()
 //        getUserTokeFTIA()
         // MARK : TODO need to test this to see if it fixes push notification
-        let token = InstanceID.instanceID().token() //FIRInstanceID.instanceID().token()!
+        let token = InstanceID.instanceID().token()!
         print("\(token)>>>>>>>>>>>>>>>>>>>>>>>>")
         // MARK : Reference to Firebase Database
         var ref: DatabaseReference!
