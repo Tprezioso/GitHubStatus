@@ -55,9 +55,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 //        firstTimeInApp()
 //        getUserTokeFTIA()
+        
         // MARK : TODO need to test this to see if it fixes push notification
         let token = InstanceID.instanceID().token()!
         print("\(token)>>>>>>>>>>>>>>>>>>>>>>>>")
+
         // MARK : Reference to Firebase Database
         var ref: DatabaseReference!
         ref = Database.database().reference(withPath: "push-token")
