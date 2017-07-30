@@ -20,18 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Override point for customization after application launch.
         FirebaseApp.configure()
         if #available(iOS 10.0, *) {
+            // For iOS 10 display notification (sent via APNS)
+            UNUserNotificationCenter.current().delegate = self
+            
             let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
             UNUserNotificationCenter.current().requestAuthorization(
                 options: authOptions,
                 completionHandler: {_, _ in })
-            // For iOS 10 display notification (sent via APNS)
-            UNUserNotificationCenter.current().delegate = self
-            // For iOS 10 data message (sent via FCM)
-            // FIRMessaging.messaging().remoteMessageDelegate = self
         } else {
-            let settings: UIUserNotificationSettings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+            let settings: UIUserNotificationSettings =
+                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
             application.registerUserNotificationSettings(settings)
         }
+        
         application.registerForRemoteNotifications()
        
         do {
@@ -57,8 +58,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 //        getUserTokeFTIA()
         
         // MARK : TODO need to test this to see if it fixes push notification
-        let token = InstanceID.instanceID().token()!
-        print("\(token)>>>>>>>>>>>>>>>>>>>>>>>>")
+        //let token = InstanceID.instanceID().token()!
+        let token = Messaging.messaging().fcmToken
+        print("\(String(describing: token))>>>>>>>>>>>>>>>>>>>>>>>>")
 
         // MARK : Reference to Firebase Database
         var ref: DatabaseReference!
@@ -73,19 +75,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-//        firstTimeInApp()
-//        getUserTokeFTIA()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadViewFromBackground"), object: nil)
-//        getUserTokeFTIA()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-        //firstTimeInApp()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
@@ -127,13 +125,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         UserDefaults.standard.set(true, forKey: "launchedBefore")
     }
     
-    func tokenRefreshNotification(_ notification: Notification) {
-        if let refreshedToken = InstanceID.instanceID().token() {
-            print("InstanceID token: \(refreshedToken)")
-        }
+//    func tokenRefreshNotification(_ notification: Notification) {
+//        if let refreshedToken = InstanceID.instanceID().token() {
+//            print("InstanceID token: \(refreshedToken)")
+//        }
         // Commented out because of crash error
         // connectToFcm()
-    }
+//    }
     
     // Mark : Push Notification 
 
@@ -142,10 +140,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // this callback will not be fired till the user taps on the notification launching the application.
         // TODO: Handle data of notification
         
+        // With swizzling disabled you must let Messaging know about the message, for Analytics
+        // Messaging.messaging().appDidReceiveMessage(userInfo)
+        
         // Print message ID.
         if let messageID = userInfo["gcmMessageIDKey"] {
             print("Message ID: \(messageID)")
         }
+        
         // Print full message.
         print(userInfo)
     }
@@ -156,19 +158,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // this callback will not be fired till the user taps on the notification launching the application.
         // TODO: Handle data of notification
         
+        // With swizzling disabled you must let Messaging know about the message, for Analytics
+        // Messaging.messaging().appDidReceiveMessage(userInfo)
+        
         // Print message ID.
         if let messageID = userInfo["gcmMessageIDKey"] {
             print("Message ID: \(messageID)")
         }
+        
         // Print full message.
         print(userInfo)
+        
         completionHandler(UIBackgroundFetchResult.newData)
+    }
+
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        // Let FCM know about the message for analytics etc.
+        Messaging.messaging().appDidReceiveMessage(userInfo)
+        // handle your message
+    }
+    
+    func messaging(_ messaging: Messaging, didRefreshRegistrationToken fcmToken: String) {
+        print("Firebase registration token: \(fcmToken)")
     }
     
     private func application(application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        InstanceID.instanceID().setAPNSToken(deviceToken as Data, type: InstanceIDAPNSTokenType.sandbox)
+        Messaging.messaging().apnsToken = deviceToken as Data
     }
+    
+//    private func application(application: UIApplication,
+  //                   didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+    //    InstanceID.instanceID().setAPNSToken(deviceToken as Data, type: InstanceIDAPNSTokenType.sandbox)
+    //}
     
     // MARK: - Called when a notification is delivered to a foreground app.
 
