@@ -187,7 +187,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         Messaging.messaging().apnsToken = deviceToken as Data
     }
-    
+
+    // Removed as old code not used anymore by firebase
 //    private func application(application: UIApplication,
   //                   didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
     //    InstanceID.instanceID().setAPNSToken(deviceToken as Data, type: InstanceIDAPNSTokenType.sandbox)
